@@ -8,7 +8,7 @@ parts:
   - file: sources/notebooks_sources/intro_python/Extra_Python
   - file: sources/notebooks_sources/intro_python/Intro-Matplotlib
   - file: sources/notebooks_sources/intro_python/intro_sympy
-- caption: "Se\xF1ales, sistemas y modelos"
+- caption: "Modelos de sistemas dinámicos"
   chapters:
   - file: sources/notebooks_sources/modulo1/intro_sys_sen/intro_sis_y_sen
   - file: sources/notebooks_sources/modulo1/laplace/transformada_laplace_python_opcional
@@ -39,25 +39,9 @@ parts:
   - file: sources/notebooks_sources/modulo4/lugar de las raices
   - file: sources/notebooks_sources/modulo4/Pasos para el trazado
   - file: sources/notebooks_sources/modulo4/Lugar de la raices con Python
-- caption: Respuesta en frecuencia
-  chapters:
-  - file: sources/notebooks_sources/modulo_frec/respuesta_frecuencial
-  - file: sources/notebooks_sources/modulo_frec/estabilidad_nyquist/estabilidad_en_frecuencia
 - caption: "Dise\xF1o de compensadores"
   chapters:
   - file: sources/notebooks_sources/modulo5/compensadores
   - file: sources/notebooks_sources/modulo5/problema_levitador
   - file: sources/notebooks_sources/modulo5/tipo1_lead
   - file: sources/notebooks_sources/modulo5/lead_lag_design
-- caption: Control Moderno
-  chapters:
-  - file: sources/notebooks_sources/modulo_ve/polos_ceros_EE
-  - file: sources/notebooks_sources/modulo_ve/formas_canonicas
-  - file: sources/notebooks_sources/modulo_ve/transformacion_formas_canonicas
-  - file: sources/notebooks_sources/modulo_ve/ctrb_obsv
-  - file: sources/notebooks_sources/modulo_ve/referencia
-  - file: sources/notebooks_sources/modulo_ve/LSR
-  - file: sources/notebooks_sources/modulo_ve/estimadores
-  - file: sources/notebooks_sources/modulo_ve/ejemplo_A_ve_motor_cc
-  - file: sources/notebooks_sources/modulo_ve/ejemplo_B_ve_atitud_satelite
-  - file: sources/notebooks_sources/modulo_ve/ejemplo_C_ve_pendulo_invertido
