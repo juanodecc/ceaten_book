@@ -101,8 +101,6 @@ commentsRunWhenDOMLoaded(addUtterances);
     <link rel="canonical" href="https://juanodecc.github.io/ceaten_book/sources/notebooks_sources/modulo_frec/respuesta_frecuencial.html" />
     <link rel="index" title="Índice" href="../../../genindex.html" />
     <link rel="search" title="Búsqueda" href="../../../search.html" />
-    <link rel="next" title="Estabilidad en Frecuencia" href="estabilidad_nyquist/estabilidad_en_frecuencia.html" />
-    <link rel="prev" title="Lugar de las raíces usando Python" href="../modulo4/Lugar%20de%20la%20raices%20con%20Python.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="es"/>
   <meta name="docsearch:version" content="" />
@@ -153,6 +151,8 @@ commentsRunWhenDOMLoaded(addUtterances);
     <div class="bd-container__inner bd-page-width">
       
       
+      
+        
       
       <dialog id="pst-primary-sidebar-modal"></dialog>
       <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
@@ -214,7 +214,7 @@ commentsRunWhenDOMLoaded(addUtterances);
 <li class="toctree-l1"><a class="reference internal" href="../intro_python/Intro-Matplotlib.html">Figuras en Python - MATPLOTLIB</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../intro_python/intro_sympy.html">Introducción a SymPy</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Señales, sistemas y modelos</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Modelos de sistemas dinámicos</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../modulo1/intro_sys_sen/intro_sis_y_sen.html">Definiciones de Sistemas y Señales</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../modulo1/laplace/transformada_laplace_python_opcional.html">Transformada de Laplace</a></li>
@@ -251,33 +251,12 @@ commentsRunWhenDOMLoaded(addUtterances);
 <li class="toctree-l1"><a class="reference internal" href="../modulo4/Pasos%20para%20el%20trazado.html">Pasos para trazar el lugar geométrico de las raíces</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../modulo4/Lugar%20de%20la%20raices%20con%20Python.html">Lugar de las raíces usando Python</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Respuesta en frecuencia</span></p>
-<ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Respuesta Frecuencial de Sistemas lineales y SISO</a></li>
-<li class="toctree-l1"><a class="reference internal" href="estabilidad_nyquist/estabilidad_en_frecuencia.html">Estabilidad en Frecuencia</a></li>
-</ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Diseño de compensadores</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../modulo5/compensadores.html">Compensadores de adelanto y de retraso de fase</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../modulo5/problema_levitador.html">Problema de levitador magnético</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../modulo5/tipo1_lead.html">Problema con sistema de tipo 1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../modulo5/lead_lag_design.html">Ecuaciones útiles para el diseño del Lead por análisis en frecuencia</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Control Moderno</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../modulo_ve/polos_ceros_EE.html">Polos y Ceros en los modelos de espacio de estados</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../modulo_ve/formas_canonicas.html">Formas canónicas de un espacio de estados</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../modulo_ve/transformacion_formas_canonicas.html">Transformación lineal del espacio de estado</a></li>
-
-
-<li class="toctree-l1"><a class="reference internal" href="../modulo_ve/ctrb_obsv.html">Análisis de los sistemas en su forma de espacio de estados</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../modulo_ve/referencia.html">Inserción de referencias</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../modulo_ve/LSR.html">Elección de la ubicación de los polos a lazo cerrado</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../modulo_ve/estimadores.html">Diseño de estimadores</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../modulo_ve/ejemplo_A_ve_motor_cc.html">Diseño para un motor de continua</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../modulo_ve/ejemplo_B_ve_atitud_satelite.html">Diseño del sistema de control del atitud de un satélite</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../modulo_ve/ejemplo_C_ve_pendulo_invertido.html">Diseño del sistema de control del pédulo invertido</a></li>
-
 </ul>
 
     </div>
@@ -617,7 +596,7 @@ T_{N,D}(s)=\dfrac{1}{2\pi}\displaystyle\int_{-\infty}^{\infty} \dfrac{H_{N,D}(\o
 <a class="bg-primary mb-1 reference internal image-reference" href="../../../_images/Figure_0.png"><img alt="relaciones-dominios" class="bg-primary mb-1" src="../../../_images/Figure_0.png" style="width: 700px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Figura 53 </span><span class="caption-text">Relaciones entre dominios temporal, Laplace y frecuencial</span><a class="headerlink" href="#relaciones" title="Link to this image">#</a></p>
+<p><span class="caption-text">Relaciones entre dominios temporal, Laplace y frecuencial</span><a class="headerlink" href="#relaciones" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -639,7 +618,7 @@ u(t)= U_0 \sin(\omega t) \Longrightarrow U(s)=\dfrac{U_0\omega}{s^2+\omega^2}
 <a class="reference internal image-reference" href="../../../_images/Figure_0_1.png"><img alt="Figure_0_1.png" src="../../../_images/Figure_0_1.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Figura 54 </span><span class="caption-text">Sistema <span class="math notranslate nohighlight">\(H(s)\)</span></span><a class="headerlink" href="#io" title="Link to this image">#</a></p>
+<p><span class="caption-text">Sistema <span class="math notranslate nohighlight">\(H(s)\)</span></span><a class="headerlink" href="#io" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>asumiendo condiciones iniciales nulas</p>
@@ -802,7 +781,7 @@ G(s)=\dfrac{1}{s} &amp; H(\omega)= \dfrac{1}{j\omega} &amp; \text{polo en} &amp;
 <a class="reference internal image-reference" href="../../../_images/Figure_1.png"><img alt="Figure_1.png" src="../../../_images/Figure_1.png" style="width: 600px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Figura 55 </span><span class="caption-text">Polo en 0</span><a class="headerlink" href="#pzmap-polo-en-cero" title="Link to this image">#</a></p>
+<p><span class="caption-text">Polo en 0</span><a class="headerlink" href="#pzmap-polo-en-cero" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>el módulo resulta</p>
@@ -824,7 +803,7 @@ G(s)=\dfrac{1}{s} &amp; H(\omega)= \dfrac{1}{j\omega} &amp; \text{polo en} &amp;
 <a class="reference internal image-reference" href="../../../_images/Figure_2.png"><img alt="Figure_2.png" src="../../../_images/Figure_2.png" style="width: 600px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Figura 56 </span><span class="caption-text">Bode de <span class="math notranslate nohighlight">\(G(s)=\dfrac{1}{s}\)</span></span><a class="headerlink" href="#bode-polo-en-cero" title="Link to this image">#</a></p>
+<p><span class="caption-text">Bode de <span class="math notranslate nohighlight">\(G(s)=\dfrac{1}{s}\)</span></span><a class="headerlink" href="#bode-polo-en-cero" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -840,7 +819,7 @@ G(s)=\dfrac{1}{s^n} &amp; G(j\omega)= \dfrac{1}{j^n\omega^n} &amp; \text{n polos
 <a class="reference internal image-reference" href="../../../_images/Figure_3.png"><img alt="Figure_3.png" src="../../../_images/Figure_3.png" style="width: 600px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Figura 57 </span><span class="caption-text">Polos de <span class="math notranslate nohighlight">\(G(s)\)</span> en <span class="math notranslate nohighlight">\(s=0\)</span> de multiplicidad <span class="math notranslate nohighlight">\(n\)</span></span><a class="headerlink" href="#pzmap-polo-multiple-en-cero" title="Link to this image">#</a></p>
+<p><span class="caption-text">Polos de <span class="math notranslate nohighlight">\(G(s)\)</span> en <span class="math notranslate nohighlight">\(s=0\)</span> de multiplicidad <span class="math notranslate nohighlight">\(n\)</span></span><a class="headerlink" href="#pzmap-polo-multiple-en-cero" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>el módulo resulta</p>
@@ -866,7 +845,7 @@ G(s)=\dfrac{1}{s^n} &amp; G(j\omega)= \dfrac{1}{j^n\omega^n} &amp; \text{n polos
 <a class="reference internal image-reference" href="../../../_images/Figure_4.png"><img alt="Figure_4.png" src="../../../_images/Figure_4.png" style="width: 600px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Figura 58 </span><span class="caption-text">Bode cuando n=2, es decir <span class="math notranslate nohighlight">\(G(s)=\dfrac{1}{s^2}\)</span></span><a class="headerlink" href="#bode-polo-multiple-0" title="Link to this image">#</a></p>
+<p><span class="caption-text">Bode cuando n=2, es decir <span class="math notranslate nohighlight">\(G(s)=\dfrac{1}{s^2}\)</span></span><a class="headerlink" href="#bode-polo-multiple-0" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -882,7 +861,7 @@ G(s)=\dfrac{1}{\tau s+1} &amp; H(\omega)= G(j\omega)= \dfrac{1}{j\omega\tau+1} &
 <a class="reference internal image-reference" href="../../../_images/Figure_5.png"><img alt="Figure_5.png" src="../../../_images/Figure_5.png" style="width: 600px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Figura 59 </span><span class="caption-text">Polo de <span class="math notranslate nohighlight">\(G(s)\)</span> en <span class="math notranslate nohighlight">\(s=-1/\tau\)</span></span><a class="headerlink" href="#polo-real-negativo" title="Link to this image">#</a></p>
+<p><span class="caption-text">Polo de <span class="math notranslate nohighlight">\(G(s)\)</span> en <span class="math notranslate nohighlight">\(s=-1/\tau\)</span></span><a class="headerlink" href="#polo-real-negativo" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>el módulo resulta</p>
@@ -924,7 +903,7 @@ G(s)=\dfrac{1}{\tau s+1} &amp; H(\omega)= G(j\omega)= \dfrac{1}{j\omega\tau+1} &
 <a class="reference internal image-reference" href="../../../_images/Figure_6.png"><img alt="Figure_6.png" src="../../../_images/Figure_6.png" style="width: 600px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Figura 60 </span><span class="caption-text">Bode de <span class="math notranslate nohighlight">\(G(s)=\dfrac{1}{\tau s+1}\)</span> con <span class="math notranslate nohighlight">\(\tau=1\)</span></span><a class="headerlink" href="#bode-polo-real-simple" title="Link to this image">#</a></p>
+<p><span class="caption-text">Bode de <span class="math notranslate nohighlight">\(G(s)=\dfrac{1}{\tau s+1}\)</span> con <span class="math notranslate nohighlight">\(\tau=1\)</span></span><a class="headerlink" href="#bode-polo-real-simple" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -939,7 +918,7 @@ G(s)=\dfrac{\omega_n^2}{s^2+2\xi\omega_ns+\omega_n^2}
 <a class="reference internal image-reference" href="../../../_images/Figure_7.png"><img alt="Figure_7.png" src="../../../_images/Figure_7.png" style="width: 500px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Figura 61 </span><span class="caption-text">Polo complejos conjugados de <span class="math notranslate nohighlight">\(G(s)\)</span> con <span class="math notranslate nohighlight">\(\omega_n=1\)</span> y <span class="math notranslate nohighlight">\(\xi=0.5\)</span></span><a class="headerlink" href="#polos-complejos-map" title="Link to this image">#</a></p>
+<p><span class="caption-text">Polo complejos conjugados de <span class="math notranslate nohighlight">\(G(s)\)</span> con <span class="math notranslate nohighlight">\(\omega_n=1\)</span> y <span class="math notranslate nohighlight">\(\xi=0.5\)</span></span><a class="headerlink" href="#polos-complejos-map" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="math notranslate nohighlight">
@@ -989,7 +968,7 @@ H(\omega)= G(j\omega)= \dfrac{\omega_n^2}{-\omega_n^2+j2\xi\omega_n\omega+\omega
 <a class="reference internal image-reference" href="../../../_images/Figure_8.png"><img alt="Figure_8.png" src="../../../_images/Figure_8.png" style="width: 700px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Figura 62 </span><span class="caption-text">Bode de <span class="math notranslate nohighlight">\(G(s)\)</span> con <span class="math notranslate nohighlight">\(\omega_n=1\)</span> y <span class="math notranslate nohighlight">\(\xi= 0.9,0.7,0.5,0.3,0.1,0.01\)</span></span><a class="headerlink" href="#polos-complejos-bode" title="Link to this image">#</a></p>
+<p><span class="caption-text">Bode de <span class="math notranslate nohighlight">\(G(s)\)</span> con <span class="math notranslate nohighlight">\(\omega_n=1\)</span> y <span class="math notranslate nohighlight">\(\xi= 0.9,0.7,0.5,0.3,0.1,0.01\)</span></span><a class="headerlink" href="#polos-complejos-bode" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -1005,7 +984,7 @@ G(s)=s &amp; H(\omega)= {j\omega} &amp; \text{un cero en} &amp; s=0
 <a class="reference internal image-reference" href="../../../_images/Figure_9.png"><img alt="Figure_9.png" src="../../../_images/Figure_9.png" style="width: 500px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Figura 63 </span><span class="caption-text">Cero de <span class="math notranslate nohighlight">\(G(s)\)</span> en <span class="math notranslate nohighlight">\(s=0\)</span></span><a class="headerlink" href="#cero-en-cero-map" title="Link to this image">#</a></p>
+<p><span class="caption-text">Cero de <span class="math notranslate nohighlight">\(G(s)\)</span> en <span class="math notranslate nohighlight">\(s=0\)</span></span><a class="headerlink" href="#cero-en-cero-map" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>el módulo resulta</p>
@@ -1023,7 +1002,7 @@ G(s)=s &amp; H(\omega)= {j\omega} &amp; \text{un cero en} &amp; s=0
 <a class="reference internal image-reference" href="../../../_images/Figure_10.png"><img alt="Figure_10.png" src="../../../_images/Figure_10.png" style="width: 700px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Figura 64 </span><span class="caption-text">Bode de <span class="math notranslate nohighlight">\(G(s)={s}\)</span></span><a class="headerlink" href="#cero-en-cero-bode" title="Link to this image">#</a></p>
+<p><span class="caption-text">Bode de <span class="math notranslate nohighlight">\(G(s)={s}\)</span></span><a class="headerlink" href="#cero-en-cero-bode" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -1039,7 +1018,7 @@ G(s)={s^n} &amp; G(j\omega)= {j^n\omega^n} &amp; \text{n ceros en} &amp; s=0
 <a class="reference internal image-reference" href="../../../_images/Figure_11.png"><img alt="Figure_11.png" src="../../../_images/Figure_11.png" style="width: 500px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Figura 65 </span><span class="caption-text">Ceros de <span class="math notranslate nohighlight">\(G(s)\)</span> en <span class="math notranslate nohighlight">\(s=0\)</span> de multiplicidad n</span><a class="headerlink" href="#ceros-en-ceros-map" title="Link to this image">#</a></p>
+<p><span class="caption-text">Ceros de <span class="math notranslate nohighlight">\(G(s)\)</span> en <span class="math notranslate nohighlight">\(s=0\)</span> de multiplicidad n</span><a class="headerlink" href="#ceros-en-ceros-map" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>el módulo resulta</p>
@@ -1061,7 +1040,7 @@ G(s)={s^n} &amp; G(j\omega)= {j^n\omega^n} &amp; \text{n ceros en} &amp; s=0
 <a class="reference internal image-reference" href="../../../_images/Figure_12.png"><img alt="Figure_12.png" src="../../../_images/Figure_12.png" style="width: 700px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Figura 66 </span><span class="caption-text">Bode cuando n=2, es decir <span class="math notranslate nohighlight">\(G(s)={s^2}\)</span></span><a class="headerlink" href="#ceros-en-cero-bode" title="Link to this image">#</a></p>
+<p><span class="caption-text">Bode cuando n=2, es decir <span class="math notranslate nohighlight">\(G(s)={s^2}\)</span></span><a class="headerlink" href="#ceros-en-cero-bode" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -1077,7 +1056,7 @@ G(s)={\tau s+1} &amp; H(\omega)= G(j\omega)= {j\omega\tau+1} &amp; \text{un cero
 <a class="reference internal image-reference" href="../../../_images/Figure_13.png"><img alt="Figure_13.png" src="../../../_images/Figure_13.png" style="width: 500px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Figura 67 </span><span class="caption-text">Cero de <span class="math notranslate nohighlight">\(G(s)\)</span> en <span class="math notranslate nohighlight">\(s=-1/\tau\)</span></span><a class="headerlink" href="#cero-real-simple-map" title="Link to this image">#</a></p>
+<p><span class="caption-text">Cero de <span class="math notranslate nohighlight">\(G(s)\)</span> en <span class="math notranslate nohighlight">\(s=-1/\tau\)</span></span><a class="headerlink" href="#cero-real-simple-map" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>el módulo resulta</p>
@@ -1119,7 +1098,7 @@ G(s)={\tau s+1} &amp; H(\omega)= G(j\omega)= {j\omega\tau+1} &amp; \text{un cero
 <a class="reference internal image-reference" href="../../../_images/Figure_14.png"><img alt="Figure_14.png" src="../../../_images/Figure_14.png" style="width: 700px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Figura 68 </span><span class="caption-text">Bode de <span class="math notranslate nohighlight">\(G(s)={\tau s+1}\)</span> con <span class="math notranslate nohighlight">\(\tau=1\)</span></span><a class="headerlink" href="#cero-real-simple-bode" title="Link to this image">#</a></p>
+<p><span class="caption-text">Bode de <span class="math notranslate nohighlight">\(G(s)={\tau s+1}\)</span> con <span class="math notranslate nohighlight">\(\tau=1\)</span></span><a class="headerlink" href="#cero-real-simple-bode" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -1134,7 +1113,7 @@ G(s)=\dfrac{s^2+2\xi\omega_ns+\omega_n^2}{\omega_n^2}
 <a class="reference internal image-reference" href="../../../_images/Figure_15.png"><img alt="Figure_15.png" src="../../../_images/Figure_15.png" style="width: 700px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Figura 69 </span><span class="caption-text">Bode de <span class="math notranslate nohighlight">\(G(s)\)</span> con <span class="math notranslate nohighlight">\(\omega_n=1\)</span> y <span class="math notranslate nohighlight">\(\xi= 0.9,0.7,0.5,0.3,0.1,0.01\)</span></span><a class="headerlink" href="#cero-complejo-conjugado-bode" title="Link to this image">#</a></p>
+<p><span class="caption-text">Bode de <span class="math notranslate nohighlight">\(G(s)\)</span> con <span class="math notranslate nohighlight">\(\omega_n=1\)</span> y <span class="math notranslate nohighlight">\(\xi= 0.9,0.7,0.5,0.3,0.1,0.01\)</span></span><a class="headerlink" href="#cero-complejo-conjugado-bode" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -1150,7 +1129,7 @@ G(s)={1-\tau s} &amp; H(\omega)= G(j\omega)= {1-j\omega\tau} &amp; \text{un cero
 <a class="reference internal image-reference" href="../../../_images/Figure_16.png"><img alt="Figure_16.png" src="../../../_images/Figure_16.png" style="width: 500px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Figura 70 </span><span class="caption-text">Cero de <span class="math notranslate nohighlight">\(G(s)\)</span> en <span class="math notranslate nohighlight">\(s=1/\tau\)</span>, en <span class="math notranslate nohighlight">\(\mathbb{C}^+\)</span></span><a class="headerlink" href="#cero-simple-positivo" title="Link to this image">#</a></p>
+<p><span class="caption-text">Cero de <span class="math notranslate nohighlight">\(G(s)\)</span> en <span class="math notranslate nohighlight">\(s=1/\tau\)</span>, en <span class="math notranslate nohighlight">\(\mathbb{C}^+\)</span></span><a class="headerlink" href="#cero-simple-positivo" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>el módulo resulta</p>
@@ -1192,7 +1171,7 @@ G(s)={1-\tau s} &amp; H(\omega)= G(j\omega)= {1-j\omega\tau} &amp; \text{un cero
 <a class="reference internal image-reference" href="../../../_images/Figure_17.png"><img alt="Figure_17.png" src="../../../_images/Figure_17.png" style="width: 700px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Figura 71 </span><span class="caption-text">Bode de <span class="math notranslate nohighlight">\(G(s)={1-\tau s}\)</span> con <span class="math notranslate nohighlight">\(\tau=1\)</span></span><a class="headerlink" href="#cero-real-positivo-bode" title="Link to this image">#</a></p>
+<p><span class="caption-text">Bode de <span class="math notranslate nohighlight">\(G(s)={1-\tau s}\)</span> con <span class="math notranslate nohighlight">\(\tau=1\)</span></span><a class="headerlink" href="#cero-real-positivo-bode" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -1282,7 +1261,7 @@ G(j\omega) \simeq \dfrac{0.2}{j\omega} &amp; -20dB/dec &amp; \text{ para } &amp;
 <a class="reference internal image-reference" href="../../../_images/Figure_22.png"><img alt="Figure_22.png" src="../../../_images/Figure_22.png" style="width: 700px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Figura 72 </span><span class="caption-text">Bode asintótico</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
+<p><span class="caption-text">Bode asintótico</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <section id="ejemplo">
@@ -1301,7 +1280,7 @@ G(s)=5\dfrac{\dfrac{1}{2}s+1}{(s+1)(10s+1)}
 <a class="reference internal image-reference" href="../../../_images/Figure_23.png"><img alt="Figure_23.png" src="../../../_images/Figure_23.png" style="width: 700px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Figura 73 </span><span class="caption-text">Bode asintótico de <span class="math notranslate nohighlight">\(G(s)\)</span></span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
+<p><span class="caption-text">Bode asintótico de <span class="math notranslate nohighlight">\(G(s)\)</span></span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -1339,24 +1318,6 @@ G(s)=5\dfrac{\dfrac{1}{2}s+1}{(s+1)(10s+1)}
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="../modulo4/Lugar%20de%20la%20raices%20con%20Python.html"
-       title="página anterior">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">anterior</p>
-        <p class="prev-next-title">Lugar de las raíces usando Python</p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="estabilidad_nyquist/estabilidad_en_frecuencia.html"
-       title="siguiente página">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">siguiente</p>
-        <p class="prev-next-title">Estabilidad en Frecuencia</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
 </div>
                 </footer>
               

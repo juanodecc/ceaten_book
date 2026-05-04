@@ -101,8 +101,6 @@ commentsRunWhenDOMLoaded(addUtterances);
     <link rel="canonical" href="https://juanodecc.github.io/ceaten_book/sources/notebooks_sources/modulo_frec/estabilidad_nyquist/estabilidad_en_frecuencia.html" />
     <link rel="index" title="Índice" href="../../../../genindex.html" />
     <link rel="search" title="Búsqueda" href="../../../../search.html" />
-    <link rel="next" title="Compensadores de adelanto y de retraso de fase" href="../../modulo5/compensadores.html" />
-    <link rel="prev" title="Respuesta Frecuencial de Sistemas lineales y SISO" href="../respuesta_frecuencial.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="es"/>
   <meta name="docsearch:version" content="" />
@@ -153,6 +151,8 @@ commentsRunWhenDOMLoaded(addUtterances);
     <div class="bd-container__inner bd-page-width">
       
       
+      
+        
       
       <dialog id="pst-primary-sidebar-modal"></dialog>
       <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
@@ -214,7 +214,7 @@ commentsRunWhenDOMLoaded(addUtterances);
 <li class="toctree-l1"><a class="reference internal" href="../../intro_python/Intro-Matplotlib.html">Figuras en Python - MATPLOTLIB</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../intro_python/intro_sympy.html">Introducción a SymPy</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Señales, sistemas y modelos</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Modelos de sistemas dinámicos</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../modulo1/intro_sys_sen/intro_sis_y_sen.html">Definiciones de Sistemas y Señales</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../modulo1/laplace/transformada_laplace_python_opcional.html">Transformada de Laplace</a></li>
@@ -251,33 +251,12 @@ commentsRunWhenDOMLoaded(addUtterances);
 <li class="toctree-l1"><a class="reference internal" href="../../modulo4/Pasos%20para%20el%20trazado.html">Pasos para trazar el lugar geométrico de las raíces</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../modulo4/Lugar%20de%20la%20raices%20con%20Python.html">Lugar de las raíces usando Python</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Respuesta en frecuencia</span></p>
-<ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../respuesta_frecuencial.html">Respuesta Frecuencial de Sistemas lineales y SISO</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Estabilidad en Frecuencia</a></li>
-</ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Diseño de compensadores</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../modulo5/compensadores.html">Compensadores de adelanto y de retraso de fase</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../modulo5/problema_levitador.html">Problema de levitador magnético</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../modulo5/tipo1_lead.html">Problema con sistema de tipo 1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../modulo5/lead_lag_design.html">Ecuaciones útiles para el diseño del Lead por análisis en frecuencia</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Control Moderno</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../../modulo_ve/polos_ceros_EE.html">Polos y Ceros en los modelos de espacio de estados</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../modulo_ve/formas_canonicas.html">Formas canónicas de un espacio de estados</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../modulo_ve/transformacion_formas_canonicas.html">Transformación lineal del espacio de estado</a></li>
-
-
-<li class="toctree-l1"><a class="reference internal" href="../../modulo_ve/ctrb_obsv.html">Análisis de los sistemas en su forma de espacio de estados</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../modulo_ve/referencia.html">Inserción de referencias</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../modulo_ve/LSR.html">Elección de la ubicación de los polos a lazo cerrado</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../modulo_ve/estimadores.html">Diseño de estimadores</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../modulo_ve/ejemplo_A_ve_motor_cc.html">Diseño para un motor de continua</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../modulo_ve/ejemplo_B_ve_atitud_satelite.html">Diseño del sistema de control del atitud de un satélite</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../modulo_ve/ejemplo_C_ve_pendulo_invertido.html">Diseño del sistema de control del pédulo invertido</a></li>
-
 </ul>
 
     </div>
@@ -574,7 +553,7 @@ commentsRunWhenDOMLoaded(addUtterances);
 <a class="reference internal image-reference" href="../../../../_images/est_fig1.png"><img alt="../../../../_images/est_fig1.png" src="../../../../_images/est_fig1.png" style="height: 150px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Figura 74 </span><span class="caption-text">Diagrama de Nyquist de <span class="math notranslate nohighlight">\(L(j\omega)\)</span></span><a class="headerlink" href="#est-fig1" title="Link to this image">#</a></p>
+<p><span class="caption-text">Diagrama de Nyquist de <span class="math notranslate nohighlight">\(L(j\omega)\)</span></span><a class="headerlink" href="#est-fig1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>con función de transferencia:</p>
@@ -619,7 +598,7 @@ L(j\omega) \equiv L(s)|_{s=j\omega}= |L(j\omega)|e^{j\phi(\omega)}
 <a class="reference internal image-reference" href="../../../../_images/est_fig2.png"><img alt="../../../../_images/est_fig2.png" src="../../../../_images/est_fig2.png" style="height: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Figura 75 </span><span class="caption-text">Diagrama de Nyquist de <span class="math notranslate nohighlight">\(L(j\omega)\)</span></span><a class="headerlink" href="#est-fig2" title="Link to this image">#</a></p>
+<p><span class="caption-text">Diagrama de Nyquist de <span class="math notranslate nohighlight">\(L(j\omega)\)</span></span><a class="headerlink" href="#est-fig2" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>El criterio de estabilidad permite determinar la estabilidad del sistema en lazo cerrado a partir del diagrama de Nyquist a lazo abierto de <span class="math notranslate nohighlight">\(L(j\omega)\)</span></p>
@@ -631,7 +610,7 @@ L(j\omega) \equiv L(s)|_{s=j\omega}= |L(j\omega)|e^{j\phi(\omega)}
 <a class="reference internal image-reference" href="../../../../_images/est_fig3.png"><img alt="../../../../_images/est_fig3.png" src="../../../../_images/est_fig3.png" style="height: 250px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Figura 76 </span><span class="caption-text">Diagrama de Nyquist de <span class="math notranslate nohighlight">\(L(j\omega)\)</span></span><a class="headerlink" href="#est-fig3" title="Link to this image">#</a></p>
+<p><span class="caption-text">Diagrama de Nyquist de <span class="math notranslate nohighlight">\(L(j\omega)\)</span></span><a class="headerlink" href="#est-fig3" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -647,7 +626,7 @@ L_1(s)= k \frac{(s-z_1)(s-z_2)}{(s-p_1)(s-p_2)}
 <a class="reference internal image-reference" href="../../../../_images/est_fig4.png"><img alt="../../../../_images/est_fig4.png" src="../../../../_images/est_fig4.png" style="height: 200px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Figura 77 </span><span class="caption-text">Diagrama de Nyquist de <span class="math notranslate nohighlight">\(L_1(j\omega)\)</span></span><a class="headerlink" href="#est-fig4" title="Link to this image">#</a></p>
+<p><span class="caption-text">Diagrama de Nyquist de <span class="math notranslate nohighlight">\(L_1(j\omega)\)</span></span><a class="headerlink" href="#est-fig4" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>donde</p>
@@ -661,7 +640,7 @@ L_1(s)= k \frac{(s-z_1)(s-z_2)}{(s-p_1)(s-p_2)}
 <a class="reference internal image-reference" href="../../../../_images/est_fig5.png"><img alt="../../../../_images/est_fig5.png" src="../../../../_images/est_fig5.png" style="height: 150px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Figura 78 </span><span class="caption-text">Mapeo de la curva <span class="math notranslate nohighlight">\(\mathscr{C}_1\)</span> para <span class="math notranslate nohighlight">\(L_2(s)\)</span></span><a class="headerlink" href="#est-fig5" title="Link to this image">#</a></p>
+<p><span class="caption-text">Mapeo de la curva <span class="math notranslate nohighlight">\(\mathscr{C}_1\)</span> para <span class="math notranslate nohighlight">\(L_2(s)\)</span></span><a class="headerlink" href="#est-fig5" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>En este caso como hay una singularidad de <span class="math notranslate nohighlight">\(L_2(s)\)</span> dentro del contorno <span class="math notranslate nohighlight">\(\mathscr{C}_1\)</span>. Cuando «<span class="math notranslate nohighlight">\(s\)</span>» recorre <span class="math notranslate nohighlight">\(\mathscr{C}_1\)</span> hay un cambio neto de <span class="math notranslate nohighlight">\(360º\)</span> en la fase <span class="math notranslate nohighlight">\(\phi_2\)</span> correspondiente a la singularidad dentro del contorno <span class="math notranslate nohighlight">\(\mathscr{C}_1\)</span> lo que hace que <span class="math notranslate nohighlight">\(\alpha\)</span> cambie <span class="math notranslate nohighlight">\(360º\)</span> esto significa que el mapeo encierra el origen.</p>
@@ -675,7 +654,7 @@ f(s) =1+ kG(s)H(s)= 1+ k L(s)=0
 <a class="reference internal image-reference" href="../../../../_images/est_fig6.png"><img alt="../../../../_images/est_fig6.png" src="../../../../_images/est_fig6.png" style="height: 200px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Figura 79 </span><span class="caption-text">Contorno que encierra <span class="math notranslate nohighlight">\(\mathbb{C}^+\)</span></span><a class="headerlink" href="#est-fig6" title="Link to this image">#</a></p>
+<p><span class="caption-text">Contorno que encierra <span class="math notranslate nohighlight">\(\mathbb{C}^+\)</span></span><a class="headerlink" href="#est-fig6" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Entonces si el mapeo de <span class="math notranslate nohighlight">\(L(s)\)</span> encierra el origen si el contorno <span class="math notranslate nohighlight">\(\mathscr{C}\)</span> encierra un número de polos y ceros tal que:</p>
@@ -746,7 +725,7 @@ G(s)=\frac{1}{(s+1)^2}
 <a class="reference internal image-reference" href="../../../../_images/est_fig7_0.png"><img alt="../../../../_images/est_fig7_0.png" src="../../../../_images/est_fig7_0.png" style="height: 200px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Figura 80 </span><span class="caption-text">Curva de Nyquist en el plano-<span class="math notranslate nohighlight">\(s\)</span> de <span class="math notranslate nohighlight">\(G(s)\)</span></span><a class="headerlink" href="#est-fig7-0" title="Link to this image">#</a></p>
+<p><span class="caption-text">Curva de Nyquist en el plano-<span class="math notranslate nohighlight">\(s\)</span> de <span class="math notranslate nohighlight">\(G(s)\)</span></span><a class="headerlink" href="#est-fig7-0" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <ol class="arabic simple">
@@ -756,7 +735,7 @@ G(s)=\frac{1}{(s+1)^2}
 <a class="reference internal image-reference" href="../../../../_images/est_fig7.png"><img alt="../../../../_images/est_fig7.png" src="../../../../_images/est_fig7.png" style="height: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Figura 81 </span><span class="caption-text">Diagrama de Bode asintótico de <span class="math notranslate nohighlight">\(G(j\omega)\)</span></span><a class="headerlink" href="#est-fig7" title="Link to this image">#</a></p>
+<p><span class="caption-text">Diagrama de Bode asintótico de <span class="math notranslate nohighlight">\(G(j\omega)\)</span></span><a class="headerlink" href="#est-fig7" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <ol class="arabic simple" start="2">
@@ -766,7 +745,7 @@ G(s)=\frac{1}{(s+1)^2}
 <a class="reference internal image-reference" href="../../../../_images/est_fig8.png"><img alt="../../../../_images/est_fig8.png" src="../../../../_images/est_fig8.png" style="height: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Figura 82 </span><span class="caption-text">Diagrama de Nyquist de <span class="math notranslate nohighlight">\(G(s)\)</span></span><a class="headerlink" href="#est-fig8" title="Link to this image">#</a></p>
+<p><span class="caption-text">Diagrama de Nyquist de <span class="math notranslate nohighlight">\(G(s)\)</span></span><a class="headerlink" href="#est-fig8" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <ol class="arabic simple" start="3">
@@ -795,7 +774,7 @@ Z= N+P= 0
 <a class="reference internal image-reference" href="../../../../_images/est_fig9.png"><img alt="../../../../_images/est_fig9.png" src="../../../../_images/est_fig9.png" style="height: 250px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Figura 83 </span><span class="caption-text">Lugar de las raíces asintótico de <span class="math notranslate nohighlight">\(G(s)\)</span></span><a class="headerlink" href="#est-fig9" title="Link to this image">#</a></p>
+<p><span class="caption-text">Lugar de las raíces asintótico de <span class="math notranslate nohighlight">\(G(s)\)</span></span><a class="headerlink" href="#est-fig9" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Notar que para ciertos valores de ganancias negativas, el sistema se hace inestable con un polo en el semi-plano derecho.</p>
@@ -812,7 +791,7 @@ G(s) = \frac{1}{s(s+1)}
 <a class="reference internal image-reference" href="../../../../_images/est_fig10.png"><img alt="../../../../_images/est_fig10.png" src="../../../../_images/est_fig10.png" style="height: 200px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Figura 84 </span><span class="caption-text">Curva de Nyquist en el plano-s de <span class="math notranslate nohighlight">\(G(s)= \frac{1}{s(s+1)}\)</span></span><a class="headerlink" href="#est-fig10" title="Link to this image">#</a></p>
+<p><span class="caption-text">Curva de Nyquist en el plano-s de <span class="math notranslate nohighlight">\(G(s)= \frac{1}{s(s+1)}\)</span></span><a class="headerlink" href="#est-fig10" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Comenzamos haciendo un Bode asintótico para dibujar el Nyquist para frecuencias <span class="math notranslate nohighlight">\(\omega &gt;0\)</span>, es decir que van entre <span class="math notranslate nohighlight">\(0_+ &lt; \omega &lt; +\infty\)</span> y el simétrico de frecuencias negativas <span class="math notranslate nohighlight">\(0_- &lt; \omega &lt; -\infty\)</span></p>
@@ -820,7 +799,7 @@ G(s) = \frac{1}{s(s+1)}
 <a class="reference internal image-reference" href="../../../../_images/est_fig11.png"><img alt="../../../../_images/est_fig11.png" src="../../../../_images/est_fig11.png" style="height: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Figura 85 </span><span class="caption-text">Bode asintótico de <span class="math notranslate nohighlight">\(G(s)= \frac{1}{s(s+1)}\)</span></span><a class="headerlink" href="#est-fig11" title="Link to this image">#</a></p>
+<p><span class="caption-text">Bode asintótico de <span class="math notranslate nohighlight">\(G(s)= \frac{1}{s(s+1)}\)</span></span><a class="headerlink" href="#est-fig11" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Con el Bode anterior dibujamos el mapeo de <span class="math notranslate nohighlight">\(G(\mathscr{C}_1)\)</span></p>
@@ -828,7 +807,7 @@ G(s) = \frac{1}{s(s+1)}
 <a class="reference internal image-reference" href="../../../../_images/est_fig12.png"><img alt="../../../../_images/est_fig12.png" src="../../../../_images/est_fig12.png" style="height: 250px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Figura 86 </span><span class="caption-text">Nyquist de <span class="math notranslate nohighlight">\(G(\mathscr{C}_1)\)</span></span><a class="headerlink" href="#est-fig12" title="Link to this image">#</a></p>
+<p><span class="caption-text">Nyquist de <span class="math notranslate nohighlight">\(G(\mathscr{C}_1)\)</span></span><a class="headerlink" href="#est-fig12" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>El mapeo de <span class="math notranslate nohighlight">\(G(\mathscr{C}_2)\)</span> donde <span class="math notranslate nohighlight">\(\mathscr{C}_2: s=\rho e^{j\theta} \text{ con } \rho \longrightarrow \infty \text{ y } -\frac{\pi}{2}&lt;\theta&lt;\frac{\pi}{2}\)</span> pasando por <span class="math notranslate nohighlight">\(\theta = 0\)</span> son puntos que van a parar al 0 del diagrama de Nyquist.</p>
@@ -841,7 +820,7 @@ G(s)= \lim_{\rho \rightarrow \infty}\frac{1}{\rho e^{j\theta}(\rho e^{j\theta}+1
 <a class="reference internal image-reference" href="../../../../_images/est_fig13.png"><img alt="../../../../_images/est_fig13.png" src="../../../../_images/est_fig13.png" style="height: 250px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Figura 87 </span><span class="caption-text">Nyquist de <span class="math notranslate nohighlight">\(G(s)\)</span> sin cerrar</span><a class="headerlink" href="#est-fig13" title="Link to this image">#</a></p>
+<p><span class="caption-text">Nyquist de <span class="math notranslate nohighlight">\(G(s)\)</span> sin cerrar</span><a class="headerlink" href="#est-fig13" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Analizamos el cierre por infinito, para lo que usaremos el contorno <span class="math notranslate nohighlight">\(\mathscr{C}_3\)</span>, que se parametriza como:</p>
@@ -854,9 +833,9 @@ G(s)= \lim_{\rho \rightarrow \infty}\frac{1}{\rho e^{j\theta}(\rho e^{j\theta}+1
 \[
 G(s)= \lim_{\rho \rightarrow 0}\frac{1}{\rho e^{j\theta}(\rho e^{j\theta}+1)}\approx \lim_{\rho \rightarrow 0}\frac{1}{\rho e^{j\theta}} = \lim_{\rho \rightarrow 0} \frac{1}{\rho} e^{-j\theta}
 \]</div>
-<p>De lo anterior con <span class="math notranslate nohighlight">\(\rho \longrightarrow 0\)</span> tenemos que el módulo del mapeo tiende a infinito <span class="math notranslate nohighlight">\(||\longrightarrow \infty\)</span> y si no es evidente, el ángulo lo podemos evaluar para algunos valores relevantes de <span class="math notranslate nohighlight">\(\theta\)</span> y calcular el argumento del mapeo, que en este caso le llamaremos <span class="math notranslate nohighlight">\(\phi\)</span>, para lo que hacemos la siguiente <a class="reference internal" href="#tabla1"><span class="std std-numref">Tabla 1</span></a>:</p>
+<p>De lo anterior con <span class="math notranslate nohighlight">\(\rho \longrightarrow 0\)</span> tenemos que el módulo del mapeo tiende a infinito <span class="math notranslate nohighlight">\(||\longrightarrow \infty\)</span> y si no es evidente, el ángulo lo podemos evaluar para algunos valores relevantes de <span class="math notranslate nohighlight">\(\theta\)</span> y calcular el argumento del mapeo, que en este caso le llamaremos <span class="math notranslate nohighlight">\(\phi\)</span>, para lo que hacemos la siguiente <code class="xref std std-numref docutils literal notranslate"><span class="pre">tabla1</span></code>:</p>
 <div class="pst-scrollable-table-container"><table class="table table-center" id="tabla1">
-<caption><span class="caption-number">Tabla 1 </span><span class="caption-text">Mapeo del ángulo <span class="math notranslate nohighlight">\(\theta\)</span></span><a class="headerlink" href="#tabla1" title="Link to this table">#</a></caption>
+<caption><span class="caption-text">Mapeo del ángulo <span class="math notranslate nohighlight">\(\theta\)</span></span><a class="headerlink" href="#tabla1" title="Link to this table">#</a></caption>
 <thead>
 <tr class="row-odd"><th class="head"><p><span class="math notranslate nohighlight">\(\theta [deg]\)</span></p></th>
 <th class="head"><p><span class="math notranslate nohighlight">\(\phi [deg]\)</span></p></th>
@@ -881,12 +860,12 @@ G(s)= \lim_{\rho \rightarrow 0}\frac{1}{\rho e^{j\theta}(\rho e^{j\theta}+1)}\ap
 </tbody>
 </table>
 </div>
-<p>Con lo anterior podemos cerrar el diagrama como se ve en <a class="reference internal" href="#est-fig14"><span class="std std-numref">Figura 88</span></a></p>
+<p>Con lo anterior podemos cerrar el diagrama como se ve en <code class="xref std std-numref docutils literal notranslate"><span class="pre">est_fig14</span></code></p>
 <figure class="align-center" id="est-fig14">
 <a class="reference internal image-reference" href="../../../../_images/est_fig14.png"><img alt="../../../../_images/est_fig14.png" src="../../../../_images/est_fig14.png" style="height: 250px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Figura 88 </span><span class="caption-text">Nyquist de <span class="math notranslate nohighlight">\(G(s)\)</span> cerrado</span><a class="headerlink" href="#est-fig14" title="Link to this image">#</a></p>
+<p><span class="caption-text">Nyquist de <span class="math notranslate nohighlight">\(G(s)\)</span> cerrado</span><a class="headerlink" href="#est-fig14" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Finalmente con el diagrama cerrado podemos, contamos la vueltas al -1 y los polos de <span class="math notranslate nohighlight">\(G(s)\)</span> en el RHP y calculamos la estabilidad del sistema:</p>
@@ -901,7 +880,7 @@ N=0 &amp; \text{ y } &amp; P=0 &amp; \Longrightarrow &amp; Z=0 ~~ \forall k&gt;0
 <a class="reference internal image-reference" href="../../../../_images/est_fig15.png"><img alt="../../../../_images/est_fig15.png" src="../../../../_images/est_fig15.png" style="height: 250px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Figura 89 </span><span class="caption-text">Lugar de las raíces asintótico de <span class="math notranslate nohighlight">\(G(s)= \frac{1}{s(s+1)}\)</span> con <span class="math notranslate nohighlight">\(k&gt;0\)</span></span><a class="headerlink" href="#est-fig15" title="Link to this image">#</a></p>
+<p><span class="caption-text">Lugar de las raíces asintótico de <span class="math notranslate nohighlight">\(G(s)= \frac{1}{s(s+1)}\)</span> con <span class="math notranslate nohighlight">\(k&gt;0\)</span></span><a class="headerlink" href="#est-fig15" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Un detalle del gráfico, <strong>«que no es relevante para determinar la estabilidad»</strong>, que suele aparecer al dibujar el diagrama de Nyquist con alguna herramienta de simulación. Cuando la frecuencia es muy grande la curva de Nyquist no se hace asintótica al eje <span class="math notranslate nohighlight">\(j\omega\)</span> en realidad para este ejemplo, se hace asintótica al eje -1.</p>
@@ -913,7 +892,7 @@ N=0 &amp; \text{ y } &amp; P=0 &amp; \Longrightarrow &amp; Z=0 ~~ \forall k&gt;0
 <a class="reference internal image-reference" href="../../../../_images/est_fig16.png"><img alt="../../../../_images/est_fig16.png" src="../../../../_images/est_fig16.png" style="height: 250px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Figura 90 </span><span class="caption-text">Asíntota de Nyquist</span><a class="headerlink" href="#est-fig16" title="Link to this image">#</a></p>
+<p><span class="caption-text">Asíntota de Nyquist</span><a class="headerlink" href="#est-fig16" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Todavía quedan algunas preguntas por responder sobre este ejemplo. ¿Cómo cierra el Nyquist si incluimos el polo en la curva que encierra el semi-plano derecho? y ¿Qué sucede con la estabilidad para <span class="math notranslate nohighlight">\(k&lt;0\)</span>?</p>
@@ -922,7 +901,7 @@ N=0 &amp; \text{ y } &amp; P=0 &amp; \Longrightarrow &amp; Z=0 ~~ \forall k&gt;0
 <a class="reference internal image-reference" href="../../../../_images/est_fig16_1.png"><img alt="../../../../_images/est_fig16_1.png" src="../../../../_images/est_fig16_1.png" style="height: 200px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Figura 91 </span><span class="caption-text">Nyquist cuando la curva de Nyquist contiene el polo en cero</span><a class="headerlink" href="#est-fig16-1" title="Link to this image">#</a></p>
+<p><span class="caption-text">Nyquist cuando la curva de Nyquist contiene el polo en cero</span><a class="headerlink" href="#est-fig16-1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>La estabilidad para <span class="math notranslate nohighlight">\(k&lt;0\)</span> se puede analizar de dos formas, por un lado se puede hacer el Nyquist para esa condición (rotando 180° el diagrama) como se muestra en la figura siguiente y analizar las vueltas a -1 del sistema.</p>
@@ -930,7 +909,7 @@ N=0 &amp; \text{ y } &amp; P=0 &amp; \Longrightarrow &amp; Z=0 ~~ \forall k&gt;0
 <a class="reference internal image-reference" href="../../../../_images/est_fig16_2.png"><img alt="../../../../_images/est_fig16_2.png" src="../../../../_images/est_fig16_2.png" style="height: 250px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Figura 92 </span><span class="caption-text">Nyquist de <span class="math notranslate nohighlight">\(k&lt;0\)</span> y la curva de Nyquist no contiene el polo en cero.</span><a class="headerlink" href="#est-fig16-2" title="Link to this image">#</a></p>
+<p><span class="caption-text">Nyquist de <span class="math notranslate nohighlight">\(k&lt;0\)</span> y la curva de Nyquist no contiene el polo en cero.</span><a class="headerlink" href="#est-fig16-2" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Para este caso <span class="math notranslate nohighlight">\(P=0\)</span> y <span class="math notranslate nohighlight">\(N=1\)</span> para todo valor de <span class="math notranslate nohighlight">\(k&lt;0\)</span> con lo que <span class="math notranslate nohighlight">\(Z=N+P =1 \)</span> por lo que el sistema es siempre inestable con un polo en RHP.</p>
@@ -939,7 +918,7 @@ N=0 &amp; \text{ y } &amp; P=0 &amp; \Longrightarrow &amp; Z=0 ~~ \forall k&gt;0
 <a class="reference internal image-reference" href="../../../../_images/est_fig16_3.png"><img alt="../../../../_images/est_fig16_3.png" src="../../../../_images/est_fig16_3.png" style="height: 350px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Figura 93 </span><span class="caption-text">Análisis de estabilidad en el punto <span class="math notranslate nohighlight">\(-\frac{1}{k}\)</span> para todo valor de <span class="math notranslate nohighlight">\(k\)</span>.</span><a class="headerlink" href="#est-fig16-3" title="Link to this image">#</a></p>
+<p><span class="caption-text">Análisis de estabilidad en el punto <span class="math notranslate nohighlight">\(-\frac{1}{k}\)</span> para todo valor de <span class="math notranslate nohighlight">\(k\)</span>.</span><a class="headerlink" href="#est-fig16-3" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -960,7 +939,7 @@ Sistemas con margenes de estabilidad de ganancia y fase grandes pueden soportar 
 <a class="reference internal image-reference" href="../../../../_images/est_fig17.png"><img alt="../../../../_images/est_fig17.png" src="../../../../_images/est_fig17.png" style="height: 400px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Figura 94 </span><span class="caption-text">Margenes de estabilidad</span><a class="headerlink" href="#est-fig17" title="Link to this image">#</a></p>
+<p><span class="caption-text">Margenes de estabilidad</span><a class="headerlink" href="#est-fig17" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Si la ganancia del sistema es multiplicada por <span class="math notranslate nohighlight">\(a\)</span> el Nyquist intercepta el punto crítico -1. Se dice que el margen de ganancia es <span class="math notranslate nohighlight">\(a\)</span> o expresado en decibels <span class="math notranslate nohighlight">\(G_M=20\log(a)\)</span>.</p>
@@ -1008,7 +987,7 @@ G_M = 20\log{3.33}= 10.45 dB
 <a class="reference internal image-reference" href="../../../../_images/est_fig18.png"><img alt="../../../../_images/est_fig18.png" src="../../../../_images/est_fig18.png" style="height: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Figura 95 </span><span class="caption-text">Margenes de estabilidad en el diagrama de Bode</span><a class="headerlink" href="#est-fig18" title="Link to this image">#</a></p>
+<p><span class="caption-text">Margenes de estabilidad en el diagrama de Bode</span><a class="headerlink" href="#est-fig18" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -1044,24 +1023,6 @@ G_M = 20\log{3.33}= 10.45 dB
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="../respuesta_frecuencial.html"
-       title="página anterior">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">anterior</p>
-        <p class="prev-next-title">Respuesta Frecuencial de Sistemas lineales y SISO</p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="../../modulo5/compensadores.html"
-       title="siguiente página">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">siguiente</p>
-        <p class="prev-next-title">Compensadores de adelanto y de retraso de fase</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
 </div>
                 </footer>
               

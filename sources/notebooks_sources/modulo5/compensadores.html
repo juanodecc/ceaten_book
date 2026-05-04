@@ -102,7 +102,7 @@ commentsRunWhenDOMLoaded(addUtterances);
     <link rel="index" title="Índice" href="../../../genindex.html" />
     <link rel="search" title="Búsqueda" href="../../../search.html" />
     <link rel="next" title="Problema de levitador magnético" href="problema_levitador.html" />
-    <link rel="prev" title="Estabilidad en Frecuencia" href="../modulo_frec/estabilidad_nyquist/estabilidad_en_frecuencia.html" />
+    <link rel="prev" title="Lugar de las raíces usando Python" href="../modulo4/Lugar%20de%20la%20raices%20con%20Python.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="es"/>
   <meta name="docsearch:version" content="" />
@@ -214,7 +214,7 @@ commentsRunWhenDOMLoaded(addUtterances);
 <li class="toctree-l1"><a class="reference internal" href="../intro_python/Intro-Matplotlib.html">Figuras en Python - MATPLOTLIB</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../intro_python/intro_sympy.html">Introducción a SymPy</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Señales, sistemas y modelos</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Modelos de sistemas dinámicos</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../modulo1/intro_sys_sen/intro_sis_y_sen.html">Definiciones de Sistemas y Señales</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../modulo1/laplace/transformada_laplace_python_opcional.html">Transformada de Laplace</a></li>
@@ -251,33 +251,12 @@ commentsRunWhenDOMLoaded(addUtterances);
 <li class="toctree-l1"><a class="reference internal" href="../modulo4/Pasos%20para%20el%20trazado.html">Pasos para trazar el lugar geométrico de las raíces</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../modulo4/Lugar%20de%20la%20raices%20con%20Python.html">Lugar de las raíces usando Python</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Respuesta en frecuencia</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../modulo_frec/respuesta_frecuencial.html">Respuesta Frecuencial de Sistemas lineales y SISO</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../modulo_frec/estabilidad_nyquist/estabilidad_en_frecuencia.html">Estabilidad en Frecuencia</a></li>
-</ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Diseño de compensadores</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Compensadores de adelanto y de retraso de fase</a></li>
 <li class="toctree-l1"><a class="reference internal" href="problema_levitador.html">Problema de levitador magnético</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tipo1_lead.html">Problema con sistema de tipo 1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lead_lag_design.html">Ecuaciones útiles para el diseño del Lead por análisis en frecuencia</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Control Moderno</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../modulo_ve/polos_ceros_EE.html">Polos y Ceros en los modelos de espacio de estados</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../modulo_ve/formas_canonicas.html">Formas canónicas de un espacio de estados</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../modulo_ve/transformacion_formas_canonicas.html">Transformación lineal del espacio de estado</a></li>
-
-
-<li class="toctree-l1"><a class="reference internal" href="../modulo_ve/ctrb_obsv.html">Análisis de los sistemas en su forma de espacio de estados</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../modulo_ve/referencia.html">Inserción de referencias</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../modulo_ve/LSR.html">Elección de la ubicación de los polos a lazo cerrado</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../modulo_ve/estimadores.html">Diseño de estimadores</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../modulo_ve/ejemplo_A_ve_motor_cc.html">Diseño para un motor de continua</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../modulo_ve/ejemplo_B_ve_atitud_satelite.html">Diseño del sistema de control del atitud de un satélite</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../modulo_ve/ejemplo_C_ve_pendulo_invertido.html">Diseño del sistema de control del pédulo invertido</a></li>
-
 </ul>
 
     </div>
@@ -584,7 +563,7 @@ commentsRunWhenDOMLoaded(addUtterances);
 <a class="reference internal image-reference" href="../../../_images/fig14.png"><img alt="Diagrama de bloques de sistema a lazo cerrado compensado" src="../../../_images/fig14.png" style="width: 350px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Figura 96 </span><span class="caption-text">Compensador polo-cero</span><a class="headerlink" href="#compensador1" title="Link to this image">#</a></p>
+<p><span class="caption-number">Figura 53 </span><span class="caption-text">Compensador polo-cero</span><a class="headerlink" href="#compensador1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Con estos presupuestos, se da por supuesto que el sistema se controla con un lazo de realimentación negativa unitaria. Sin embargo, en ocasiones pueden diseñarse compensadores que se coloquen en otras posiciones del lazo de control, resultando una realimentación negativa no unitaria. Este tipo de compensadores no se estudiarán en la presente asignatura.</p>
@@ -608,7 +587,7 @@ commentsRunWhenDOMLoaded(addUtterances);
 <a class="reference internal image-reference" href="../../../_images/fig22.png"><img alt="Compensación adelanto - Retraso" src="../../../_images/fig22.png" style="width: 450px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Figura 97 </span><span class="caption-text">Compensador adelanto-atraso</span><a class="headerlink" href="#compensador-adelanto-atraso" title="Link to this image">#</a></p>
+<p><span class="caption-number">Figura 54 </span><span class="caption-text">Compensador adelanto-atraso</span><a class="headerlink" href="#compensador-adelanto-atraso" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -628,7 +607,7 @@ es preferible cuando se trabaja en el lugar de las raíces.  En los siguientes a
 <a class="reference internal image-reference" href="../../../_images/fig32.png"><img alt="Sistema que se desea compensar" src="../../../_images/fig32.png" style="width: 250px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Figura 98 </span><span class="caption-text">Sistema a compensar</span><a class="headerlink" href="#sistema-sin-compensar" title="Link to this image">#</a></p>
+<p><span class="caption-number">Figura 55 </span><span class="caption-text">Sistema a compensar</span><a class="headerlink" href="#sistema-sin-compensar" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Se trata de un sistema mecánico en el que un actuador mueve una compuerta de masa <span class="math notranslate nohighlight">\(m\)</span> dentro de un medio con viscosidad <span class="math notranslate nohighlight">\(c\)</span>. El actuador debe colocar la compuerta siguiendo la referencia de posición que se le comande de tal forma que el tiempo de establecimiento sea menor o igual que 2 segundos y que el sobrevalor máximo respecto la referencia sea del 20% o menor. La masa de la compuerta es de 0.25 kg y el coeficiente viscoso es 0.5 Ns/m.</p>
@@ -644,7 +623,7 @@ es preferible cuando se trabaja en el lugar de las raíces.  En los siguientes a
 <a class="reference internal image-reference" href="../../../_images/fig43.png"><img alt="Efecto de la adición de un polo y un cero en el lugar de las raíces" src="../../../_images/fig43.png" style="width: 900px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Figura 99 </span><span class="caption-text">Efecto de un polo en lugar de las raíces</span><a class="headerlink" href="#efecto-polo" title="Link to this image">#</a></p>
+<p><span class="caption-number">Figura 56 </span><span class="caption-text">Efecto de un polo en lugar de las raíces</span><a class="headerlink" href="#efecto-polo" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Este efecto se muestra cualitativamente en la figura anterior justifica la definición del compensador de adelanto de fase donde se decía <span class="math notranslate nohighlight">\(a &lt; b\)</span>.
@@ -665,7 +644,7 @@ p_{\Delta}&amp;=-\zeta\omega_n\pm\omega_n\sqrt{1-\zeta^2}j&amp;=-2\pm 3.46j
 <a class="reference internal image-reference" href="../../../_images/fig53.png"><img alt="Ángulos y distancias vistas al polo objetivo" src="../../../_images/fig53.png" style="width: 400px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Figura 100 </span><span class="caption-text">Ángulos y distancias vistas al polo objetivo</span><a class="headerlink" href="#and-y-dist" title="Link to this image">#</a></p>
+<p><span class="caption-number">Figura 57 </span><span class="caption-text">Ángulos y distancias vistas al polo objetivo</span><a class="headerlink" href="#and-y-dist" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="math notranslate nohighlight">
@@ -678,7 +657,7 @@ p_{\Delta}&amp;=-\zeta\omega_n\pm\omega_n\sqrt{1-\zeta^2}j&amp;=-2\pm 3.46j
 <a class="reference internal image-reference" href="../../../_images/fig63.png"><img alt="Posiciones del par polo-cero posibles del compensador" src="../../../_images/fig63.png" style="width: 800px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Figura 101 </span><span class="caption-text">Posiciones del par polo-cero posibles del compensador</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
+<p><span class="caption-number">Figura 58 </span><span class="caption-text">Posiciones del par polo-cero posibles del compensador</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Sin embargo, la elección de la posición del par polo-cero no es absolutamente arbitraria. Efectivamente se puede conseguir que el lugar de las raíces pase por el polo objetivo, pero puede ser que en la configuración final del sistema, el polo dominante sea otro. Esta posibilidad hay que evitarla. Si se busca que el régimen transitorio lo caracterice la posición de los polos objetivo, éstos deben quedar como dominantes del sistema.</p>
@@ -696,7 +675,7 @@ En conclusión, la posición del polo y del cero del compensador es libre mientr
 <a class="reference internal image-reference" href="../../../_images/fig73.png"><img alt="Criterio de la bisectriz" src="../../../_images/fig73.png" style="width: 350px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Figura 102 </span><span class="caption-text">Criterio de la bisectriz</span><a class="headerlink" href="#criterio-bisectriz" title="Link to this image">#</a></p>
+<p><span class="caption-number">Figura 59 </span><span class="caption-text">Criterio de la bisectriz</span><a class="headerlink" href="#criterio-bisectriz" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>En el ejemplo propuesto, el polo del compensador queda aproximadamente en −5.4 y el cero en −2.9. Al aplicar la condición del módulo en el polo objetivo, la ganancia del compensador resulta ser aproximadamente 4.7, por tanto, el compensador tiene la siguiente expresión:</p>
@@ -711,7 +690,7 @@ En conclusión, la posición del polo y del cero del compensador es libre mientr
 <a class="reference internal image-reference" href="../../../_images/fig83.png"><img alt="Criterio de anular le segundo polo dominante de la planta" src="../../../_images/fig83.png" style="width: 250px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Figura 103 </span><span class="caption-text">Criterio segundo polo dominante</span><a class="headerlink" href="#segundo-polo" title="Link to this image">#</a></p>
+<p><span class="caption-number">Figura 60 </span><span class="caption-text">Criterio segundo polo dominante</span><a class="headerlink" href="#segundo-polo" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>En el ejemplo propuesto, el cero del compensador queda en −2 y el cero en −4. Al aplicar la condición del módulo en el polo objetivo, la ganancia del compensador resulta ser 4, por tanto, el compensador tiene la siguiente expresión:</p>
@@ -732,7 +711,7 @@ En conclusión, la posición del polo y del cero del compensador es libre mientr
 <a class="reference internal image-reference" href="../../../_images/fig93.png"><img alt="Criterio de un compensador proporcional-derivativo" src="../../../_images/fig93.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Figura 104 </span><span class="caption-text">Criterio de un compensador proporcional-derivativo</span><a class="headerlink" href="#criterio-pd" title="Link to this image">#</a></p>
+<p><span class="caption-number">Figura 61 </span><span class="caption-text">Criterio de un compensador proporcional-derivativo</span><a class="headerlink" href="#criterio-pd" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>El ángulo <span class="math notranslate nohighlight">\(\phi_c\)</span> coincide exactamente con el ángulo del que ve el cero al polo objetivo. En el ejemplo propuesto, el cero del compensador queda en −8 y la ganancia resulta ser 0.5, por tanto, el compensador tiene la siguiente expresión:</p>
@@ -1121,12 +1100,12 @@ en las formas en que el lugar geométrico se pueda graficar. Por lo tanto, podem
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../modulo_frec/estabilidad_nyquist/estabilidad_en_frecuencia.html"
+       href="../modulo4/Lugar%20de%20la%20raices%20con%20Python.html"
        title="página anterior">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">anterior</p>
-        <p class="prev-next-title">Estabilidad en Frecuencia</p>
+        <p class="prev-next-title">Lugar de las raíces usando Python</p>
       </div>
     </a>
     <a class="right-next"

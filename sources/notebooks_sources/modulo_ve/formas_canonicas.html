@@ -101,8 +101,6 @@ commentsRunWhenDOMLoaded(addUtterances);
     <link rel="canonical" href="https://juanodecc.github.io/ceaten_book/sources/notebooks_sources/modulo_ve/formas_canonicas.html" />
     <link rel="index" title="Índice" href="../../../genindex.html" />
     <link rel="search" title="Búsqueda" href="../../../search.html" />
-    <link rel="next" title="Transformación lineal del espacio de estado" href="transformacion_formas_canonicas.html" />
-    <link rel="prev" title="Polos y Ceros en los modelos de espacio de estados" href="polos_ceros_EE.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="es"/>
   <meta name="docsearch:version" content="" />
@@ -153,6 +151,8 @@ commentsRunWhenDOMLoaded(addUtterances);
     <div class="bd-container__inner bd-page-width">
       
       
+      
+        
       
       <dialog id="pst-primary-sidebar-modal"></dialog>
       <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
@@ -214,7 +214,7 @@ commentsRunWhenDOMLoaded(addUtterances);
 <li class="toctree-l1"><a class="reference internal" href="../intro_python/Intro-Matplotlib.html">Figuras en Python - MATPLOTLIB</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../intro_python/intro_sympy.html">Introducción a SymPy</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Señales, sistemas y modelos</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Modelos de sistemas dinámicos</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../modulo1/intro_sys_sen/intro_sis_y_sen.html">Definiciones de Sistemas y Señales</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../modulo1/laplace/transformada_laplace_python_opcional.html">Transformada de Laplace</a></li>
@@ -251,33 +251,12 @@ commentsRunWhenDOMLoaded(addUtterances);
 <li class="toctree-l1"><a class="reference internal" href="../modulo4/Pasos%20para%20el%20trazado.html">Pasos para trazar el lugar geométrico de las raíces</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../modulo4/Lugar%20de%20la%20raices%20con%20Python.html">Lugar de las raíces usando Python</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Respuesta en frecuencia</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../modulo_frec/respuesta_frecuencial.html">Respuesta Frecuencial de Sistemas lineales y SISO</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../modulo_frec/estabilidad_nyquist/estabilidad_en_frecuencia.html">Estabilidad en Frecuencia</a></li>
-</ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Diseño de compensadores</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../modulo5/compensadores.html">Compensadores de adelanto y de retraso de fase</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../modulo5/problema_levitador.html">Problema de levitador magnético</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../modulo5/tipo1_lead.html">Problema con sistema de tipo 1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../modulo5/lead_lag_design.html">Ecuaciones útiles para el diseño del Lead por análisis en frecuencia</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Control Moderno</span></p>
-<ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="polos_ceros_EE.html">Polos y Ceros en los modelos de espacio de estados</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Formas canónicas de un espacio de estados</a></li>
-<li class="toctree-l1"><a class="reference internal" href="transformacion_formas_canonicas.html">Transformación lineal del espacio de estado</a></li>
-
-
-<li class="toctree-l1"><a class="reference internal" href="ctrb_obsv.html">Análisis de los sistemas en su forma de espacio de estados</a></li>
-<li class="toctree-l1"><a class="reference internal" href="referencia.html">Inserción de referencias</a></li>
-<li class="toctree-l1"><a class="reference internal" href="LSR.html">Elección de la ubicación de los polos a lazo cerrado</a></li>
-<li class="toctree-l1"><a class="reference internal" href="estimadores.html">Diseño de estimadores</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ejemplo_A_ve_motor_cc.html">Diseño para un motor de continua</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ejemplo_B_ve_atitud_satelite.html">Diseño del sistema de control del atitud de un satélite</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ejemplo_C_ve_pendulo_invertido.html">Diseño del sistema de control del pédulo invertido</a></li>
-
 </ul>
 
     </div>
@@ -688,24 +667,6 @@ u
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="polos_ceros_EE.html"
-       title="página anterior">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">anterior</p>
-        <p class="prev-next-title">Polos y Ceros en los modelos de espacio de estados</p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="transformacion_formas_canonicas.html"
-       title="siguiente página">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">siguiente</p>
-        <p class="prev-next-title">Transformación lineal del espacio de estado</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
 </div>
                 </footer>
               

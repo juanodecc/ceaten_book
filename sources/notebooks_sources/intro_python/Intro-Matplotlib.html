@@ -214,7 +214,7 @@ commentsRunWhenDOMLoaded(addUtterances);
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Figuras en Python - MATPLOTLIB</a></li>
 <li class="toctree-l1"><a class="reference internal" href="intro_sympy.html">Introducción a SymPy</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Señales, sistemas y modelos</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Modelos de sistemas dinámicos</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../modulo1/intro_sys_sen/intro_sis_y_sen.html">Definiciones de Sistemas y Señales</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../modulo1/laplace/transformada_laplace_python_opcional.html">Transformada de Laplace</a></li>
@@ -251,33 +251,12 @@ commentsRunWhenDOMLoaded(addUtterances);
 <li class="toctree-l1"><a class="reference internal" href="../modulo4/Pasos%20para%20el%20trazado.html">Pasos para trazar el lugar geométrico de las raíces</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../modulo4/Lugar%20de%20la%20raices%20con%20Python.html">Lugar de las raíces usando Python</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Respuesta en frecuencia</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../modulo_frec/respuesta_frecuencial.html">Respuesta Frecuencial de Sistemas lineales y SISO</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../modulo_frec/estabilidad_nyquist/estabilidad_en_frecuencia.html">Estabilidad en Frecuencia</a></li>
-</ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Diseño de compensadores</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../modulo5/compensadores.html">Compensadores de adelanto y de retraso de fase</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../modulo5/problema_levitador.html">Problema de levitador magnético</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../modulo5/tipo1_lead.html">Problema con sistema de tipo 1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../modulo5/lead_lag_design.html">Ecuaciones útiles para el diseño del Lead por análisis en frecuencia</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Control Moderno</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../modulo_ve/polos_ceros_EE.html">Polos y Ceros en los modelos de espacio de estados</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../modulo_ve/formas_canonicas.html">Formas canónicas de un espacio de estados</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../modulo_ve/transformacion_formas_canonicas.html">Transformación lineal del espacio de estado</a></li>
-
-
-<li class="toctree-l1"><a class="reference internal" href="../modulo_ve/ctrb_obsv.html">Análisis de los sistemas en su forma de espacio de estados</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../modulo_ve/referencia.html">Inserción de referencias</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../modulo_ve/LSR.html">Elección de la ubicación de los polos a lazo cerrado</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../modulo_ve/estimadores.html">Diseño de estimadores</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../modulo_ve/ejemplo_A_ve_motor_cc.html">Diseño para un motor de continua</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../modulo_ve/ejemplo_B_ve_atitud_satelite.html">Diseño del sistema de control del atitud de un satélite</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../modulo_ve/ejemplo_C_ve_pendulo_invertido.html">Diseño del sistema de control del pédulo invertido</a></li>
-
 </ul>
 
     </div>
@@ -542,8 +521,8 @@ commentsRunWhenDOMLoaded(addUtterances);
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#la-api-orientada-a-objetos-matplotlib">La API orientada a objetos matplotlib</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tamano-de-la-figura-relacion-de-aspecto-y-dpi">Tamaño de la figura, relación de aspecto y DPI</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#guardando-figuras">Guardando figuras</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#formatos-disponibles-cuales-deben-usarse-para-obtener-la-mejor-calidad">Formatos disponibles: ¿cuáles deben usarse para obtener la mejor calidad?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#guardado-de-las-figuras">Guardado de las figuras</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eleccion-del-formato-de-la-figura">Elección del formato de la figura</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#leyendas-etiquetas-y-titulos">Leyendas, etiquetas y títulos</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#titulos-de-las-figuras">Títulos de las figuras</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#nombres-de-eje">Nombres de eje</a></li>
@@ -606,15 +585,16 @@ commentsRunWhenDOMLoaded(addUtterances);
 <h1>Figuras en Python - MATPLOTLIB<a class="headerlink" href="#figuras-en-python-matplotlib" title="Link to this heading">#</a></h1>
 <section id="introduccion">
 <h2>Introducción<a class="headerlink" href="#introduccion" title="Link to this heading">#</a></h2>
-<p>Matplotlib es una excelente biblioteca de gráficos 2D y 3D para generar figuras científicas. Algunas de las muchas ventajas de esta biblioteca incluyen:</p>
+<p>Matplotlib es una biblioteca de gráficos 2D y 3D para generar figuras. Algunas de las ventajas de esta biblioteca incluyen:</p>
 <ul class="simple">
-<li><p>Fácil de empezar, y cuenta con un gran soporte para etiquetas y textos con formato <span class="math notranslate nohighlight">\(\LaTeX\)</span></p></li>
-<li><p>Gran control de cada elemento de una figura, incluidos el tamaño de la figura y el DPI.</p></li>
+<li><p>Fácil de utilizar, y cuenta con soporte para <span class="math notranslate nohighlight">\(\LaTeX\)</span></p></li>
+<li><p>Gran control de cada elemento de una figura, como pueden ser el tamaño, la resolución oaspecto de las lineas, ejes marcadores, etc.</p></li>
 <li><p>Salida de alta calidad en muchos formatos, incluidos PNG, PDF, SVG, EPS y PGF.</p></li>
-<li><p>GUI para explorar de forma interactiva los valores en una figura.</p></li>
+<li><p>Backend de graficación interactivos que permiten explorar de forma dinámica los valores representados en las graficas</p></li>
 </ul>
 <p>Una de las características clave de matplotlib que me gustaría enfatizar, y que creo que hace que matplotlib sea muy adecuado para generar figuras para publicaciones científicas, es que todos los aspectos de la figura pueden controlarse mediante programación. Esto es importante para la reproducir resultados y es conveniente cuando se necesita regenerar la figura con datos actualizados o cambiar su apariencia.</p>
 <p>Se puede encontrar una gran cantidad de información al respecto en la página web de <a class="reference external" href="http://matplotlib.org">Matplotlib</a>.</p>
+<p>Gran parte del material de este cuaderno fue extraído y adaptado de  <a class="reference external" href="http://jrjohansson.github.io">Lecturas de Python cientifico</a> de <a class="reference external" href="http://jrjohansson.github.io">J.R. Johansson</a>.</p>
 <p>Para comenzar a utilizar Matplotlib en un programa de Python, incluya los símbolos del módulo <code class="docutils literal notranslate"><span class="pre">pyplot</span></code> (de manera sencilla):</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -628,8 +608,8 @@ commentsRunWhenDOMLoaded(addUtterances);
 </section>
 <section id="api-similar-a-matlab">
 <h2>API similar a MATLAB<a class="headerlink" href="#api-similar-a-matlab" title="Link to this heading">#</a></h2>
-<p>La forma más fácil de comenzar con el trazado de matplotlib es usar la API similar a MATLAB proporcionada por matplotlib.</p>
-<p>Está diseñado para ser compatible con las funciones de trazado de MATLAB, por lo que es fácil comenzar si está familiarizado con MATLAB.</p>
+<p>Una forma sencilla de comenzar a utlizar Matplotib es usando el API similar a MATLAB.</p>
+<p>Está diseñado para ser compatible con las funciones de ploteo de MATLAB, por lo que es fácil si está familiarizado con este popular programa.</p>
 <p>Para usar esta API de matplotlib, necesitamos incluir los símbolos en el módulo <code class="docutils literal notranslate"><span class="pre">pylab</span></code>:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -638,6 +618,7 @@ commentsRunWhenDOMLoaded(addUtterances);
 </div>
 </div>
 </div>
+<p>Cabe destacar que en la actualidad se considera una mala práctica de programamción la importación de funciones y módulos de esta manera debido a la potencial contaminación del espacio de tarbajo que se produce.</p>
 <section id="ejemplo">
 <h3>Ejemplo<a class="headerlink" href="#ejemplo" title="Link to this heading">#</a></h3>
 <p>Haremos una figura simple con la API de trazado de MATLAB. Primero generamos datos en <span class="math notranslate nohighlight">\(x\)</span> e <span class="math notranslate nohighlight">\(y\)</span>:</p>
@@ -679,21 +660,20 @@ commentsRunWhenDOMLoaded(addUtterances);
 <img alt="../../../_images/3fc90cefce7843caddbe9fa81777e41b68372aa13b7f168035d77d7d43437037.png" src="../../../_images/3fc90cefce7843caddbe9fa81777e41b68372aa13b7f168035d77d7d43437037.png" />
 </div>
 </div>
-<p>Lo bueno de la API de estilo MATLAB de Pylab es que es fácil comenzar si se está familiarizado con MATLAB, y tiene un mínimo de sobrecarga de codificación para diagramas simples.</p>
-<p>Sin embargo, recomendaría no usar la API compatible con MATLAB para nada más que las figuras más simples.</p>
-<p>En su lugar, recomiendo aprender y usar la API de trazado orientado a objetos de matplotlib. Es notablemente poderoso. Para figuras avanzadas con sub-figuras, inserciones y otros componentes, es muy agradable trabajar con ellos.</p>
+<p>A pesar de las ventajas mencionadasnteriormente recomendaría no usar la API compatible con MATLAB para nada más que las figuras más simples.</p>
+<p>En su lugar, recomiendo aprender y usar el API de trazado orientado a objetos de matplotlib que s notablemente poderoso. FAcilita el trabajo principalmente cuando se deben trazar figuras avanzadas con sub-figuras, inserciones y otros omponentes.</p>
 </section>
 </section>
 <section id="la-api-orientada-a-objetos-matplotlib">
 <h2>La API orientada a objetos matplotlib<a class="headerlink" href="#la-api-orientada-a-objetos-matplotlib" title="Link to this heading">#</a></h2>
-<p>La idea principal de la programación orientada a objetos es tener objetos en los que se puedan aplicar funciones y acciones, y ningún estado de objeto o programa debe ser global (como la API similar a MATLAB). La ventaja real de este enfoque se hace evidente cuando se crea más de una figura, o cuando una figura contiene más de un argumento secundario.</p>
-<p>Para utilizar la API orientada a objetos, comenzamos como en el ejemplo anterior, pero en lugar de crear una nueva instancia de figura global, almacenamos una referencia a la instancia de figura recién creada en la variable <code class="docutils literal notranslate"><span class="pre">fig</span></code>, y a partir de ella creamos una instancia de ejes o <code class="docutils literal notranslate"><span class="pre">axes</span></code> usando el método <code class="docutils literal notranslate"><span class="pre">add_axes</span></code> en la instancia de la clase <code class="docutils literal notranslate"><span class="pre">Figure</span></code>,  <code class="docutils literal notranslate"><span class="pre">fig</span></code>:</p>
+<p>La idea principal de la programación orientada a objetos es tener objetos en los que se puedan aplicar métodos y que ningún estado del objeto o programa sea global (como el API de MATLAB). La ventaja real de este enfoque se hace evidente cuando se crea más de una figura, o cuando una figura contiene más de un componente secundario.</p>
+<p>Para utilizar el API orientada a objetos, comenzamos como en el ejemplo anterior, pero en lugar de crear una nueva instancia de figura global, la almacenamos en una referencia en la variable <code class="docutils literal notranslate"><span class="pre">fig</span></code>, y a partir de ella creamos una instancia de ejes o <code class="docutils literal notranslate"><span class="pre">axes</span></code> usando el método <code class="docutils literal notranslate"><span class="pre">add_axes</span></code> en la instancia de la clase <code class="docutils literal notranslate"><span class="pre">Figure</span></code>,  <code class="docutils literal notranslate"><span class="pre">fig</span></code>:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
-<span class="n">axes</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_axes</span><span class="p">([</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.8</span><span class="p">,</span> <span class="mf">0.8</span><span class="p">])</span> <span class="c1"># izquierda, inferior, ancho, alto (rango 0 a 1)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span> <span class="c1"># creamos la instancia de la figura</span>
+<span class="n">axes</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_axes</span><span class="p">([</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.8</span><span class="p">,</span> <span class="mf">0.8</span><span class="p">])</span> <span class="c1">#  creamos el eje, izquierda, inferior, ancho, alto (rango 0 a 1)</span>
 
-<span class="n">axes</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="c1"># trazamos un un dibujo de la linea de color rojo </span>
 <span class="n">axes</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
 <span class="n">axes</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;y&#39;</span><span class="p">)</span>
 <span class="n">axes</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">);</span>
@@ -704,7 +684,7 @@ commentsRunWhenDOMLoaded(addUtterances);
 <img alt="../../../_images/0c6de3e67ff299ccae6efadad3dfe27d0dc98060f48cf8efb8cb81144c071697.png" src="../../../_images/0c6de3e67ff299ccae6efadad3dfe27d0dc98060f48cf8efb8cb81144c071697.png" />
 </div>
 </div>
-<p>Aunque está involucrado un poco más de código, la ventaja es que ahora tenemos el control total de dónde se colocan los ejes de trazado, y podemos agregar fácilmente más de un eje a la figura:</p>
+<p>Aunque involucra poco más de código, la ventaja es que ahora tenemos el control total de dónde se colocan los ejes de trazado, y podemos agregar fácilmente más de un eje a la figura:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
@@ -761,7 +741,7 @@ commentsRunWhenDOMLoaded(addUtterances);
 <img alt="../../../_images/ca681155d145cc114244d5096d546909953fa37d3d8a0f54ce8f056d2f6f4cbf.png" src="../../../_images/ca681155d145cc114244d5096d546909953fa37d3d8a0f54ce8f056d2f6f4cbf.png" />
 </div>
 </div>
-<p>Eso fue fácil, pero no resulta del todo bonito ya que las etiquetas se superponen a los ejes.</p>
+<p>Nota que la figura anterior resultó facíl de hacer pero tiene un error en la ubicación de las leyendas. Las mismas se superponen con al figura adyacente.</p>
 <p>Podemos lidiar con eso usando el método <code class="docutils literal notranslate"><span class="pre">fig.tight_layout</span></code>, que ajusta automáticamente las posiciones de los ejes en la ventana de la figura para que no haya contenido superpuesto:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -813,8 +793,8 @@ commentsRunWhenDOMLoaded(addUtterances);
 </div>
 </div>
 </section>
-<section id="guardando-figuras">
-<h3>Guardando figuras<a class="headerlink" href="#guardando-figuras" title="Link to this heading">#</a></h3>
+<section id="guardado-de-las-figuras">
+<h3>Guardado de las figuras<a class="headerlink" href="#guardado-de-las-figuras" title="Link to this heading">#</a></h3>
 <p>Para guardar una figura en un archivo, podemos utilizar el método <code class="docutils literal notranslate"><span class="pre">savefig</span></code> en la clase <code class="docutils literal notranslate"><span class="pre">Figure</span></code>:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -832,13 +812,13 @@ commentsRunWhenDOMLoaded(addUtterances);
 </div>
 </div>
 </section>
-<section id="formatos-disponibles-cuales-deben-usarse-para-obtener-la-mejor-calidad">
-<h3>Formatos disponibles: ¿cuáles deben usarse para obtener la mejor calidad?<a class="headerlink" href="#formatos-disponibles-cuales-deben-usarse-para-obtener-la-mejor-calidad" title="Link to this heading">#</a></h3>
+<section id="eleccion-del-formato-de-la-figura">
+<h3>Elección del formato de la figura<a class="headerlink" href="#eleccion-del-formato-de-la-figura" title="Link to this heading">#</a></h3>
 <p>Matplotlib puede generar resultados de alta calidad en varios formatos, incluidos PNG, JPG, EPS, SVG, PGF y PDF. Para artículos científicos, recomiendo usar PDF siempre que sea posible. (Los documentos LaTeX compilados con <code class="docutils literal notranslate"><span class="pre">pdflatex</span></code> pueden incluir archivos PDF usando el comando <code class="docutils literal notranslate"><span class="pre">includegraphics</span></code>). En algunos casos, PGF también puede ser una buena alternativa.</p>
 </section>
 <section id="leyendas-etiquetas-y-titulos">
 <h3>Leyendas, etiquetas y títulos<a class="headerlink" href="#leyendas-etiquetas-y-titulos" title="Link to this heading">#</a></h3>
-<p>Ahora que hemos cubierto los conceptos básicos de cómo crear un lienzo de figura y agregar instancias de ejes al lienzo, veamos cómo decorar una figura con títulos, etiquetas de ejes y leyendas.</p>
+<p>Ahora que hemos cubierto los conceptos básicos de cómo crear un una area de trazado o lienzo de la figura y agregar instancias de ejes al mismo, veamos cómo decorar una figura con títulos, etiquetas de ejes y leyendas.</p>
 <section id="titulos-de-las-figuras">
 <h4>Títulos de las figuras<a class="headerlink" href="#titulos-de-las-figuras" title="Link to this heading">#</a></h4>
 <p>Se puede agregar un título a cada instancia de eje en una figura. Para establecer el título, use el método <code class="docutils literal notranslate"><span class="pre">set_title</span></code> en la instancia de los ejes:</p>
@@ -884,7 +864,7 @@ commentsRunWhenDOMLoaded(addUtterances);
 </div>
 </div>
 <p>La ventaja de este método es que si se agregan o eliminan curvas de la figura, la leyenda se actualiza automáticamente en consecuencia.</p>
-<p>La función <code class="docutils literal notranslate"><span class="pre">legend</span></code> toma un argumento de palabra clave opcional <code class="docutils literal notranslate"><span class="pre">loc</span></code> que se puede usar para especificar dónde se dibujará la leyenda en la figura. Los valores permitidos de <code class="docutils literal notranslate"><span class="pre">loc</span></code> son códigos numéricos para los distintos lugares donde se puede dibujar la leyenda. Consulte <a class="reference external" href="http://matplotlib.org/users/legend_guide.html#legend-location">la documentación de Matplotlib</a> para obtener más información.</p>
+<p>La función <code class="docutils literal notranslate"><span class="pre">legend</span></code> toma un argumento de palabra clave opcional <code class="docutils literal notranslate"><span class="pre">loc</span></code> que se puede usar para especificar dónde se dibujará la leyenda en la figura. Los valores permitidos de <code class="docutils literal notranslate"><span class="pre">loc</span></code> son códigos numéricos para los distintos lugares donde se puede dibujar la leyenda. En <a class="reference external" href="http://matplotlib.org/users/legend_guide.html#legend-location">la documentación de Matplotlib</a> se puede encontrar más información al respecto.</p>
 <p>Algunos de los valores más comunes de <code class="docutils literal notranslate"><span class="pre">loc</span></code> son:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -944,51 +924,17 @@ commentsRunWhenDOMLoaded(addUtterances);
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Actualiza los parámetros de configuración de Matplotlib </span>
-<span class="n">matplotlib</span><span class="o">.</span><span class="n">rcParams</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="s1">&#39;font.size&#39;</span><span class="p">:</span> <span class="mi">18</span><span class="p">,</span> <span class="s1">&#39;font.family&#39;</span><span class="p">:</span> <span class="s1">&#39;serif&#39;</span><span class="p">})</span>
+<span class="c1"># matplotlib.rcParams.update({&#39;font.size&#39;: 18, &#39;font.family&#39;: &#39;serif&#39;})</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
-
-<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sa">r</span><span class="s2">&quot;$y = \alpha^2$&quot;</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">x</span><span class="o">**</span><span class="mi">3</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sa">r</span><span class="s2">&quot;$y = \alpha^3$&quot;</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span> <span class="c1"># upper left corner</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$\alpha$&#39;</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$y$&#39;</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">);</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<img alt="../../../_images/05267c5fbf2470a4d050bcb09dc761ef2ad0594b60607ef5c7272c635989a9a7.png" src="../../../_images/05267c5fbf2470a4d050bcb09dc761ef2ad0594b60607ef5c7272c635989a9a7.png" />
 </div>
 </div>
 <p>Una buena elección de fuentes globales son las fuentes STIX:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">matplotlib</span><span class="o">.</span><span class="n">rcParams</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="s1">&#39;font.size&#39;</span><span class="p">:</span> <span class="mi">18</span><span class="p">,</span> <span class="s1">&#39;font.family&#39;</span><span class="p">:</span> <span class="s1">&#39;STIXGeneral&#39;</span><span class="p">,</span> <span class="s1">&#39;mathtext.fontset&#39;</span><span class="p">:</span> <span class="s1">&#39;stix&#39;</span><span class="p">})</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># matplotlib.rcParams.update({&#39;font.size&#39;: 18, &#39;font.family&#39;: &#39;STIXGeneral&#39;, &#39;mathtext.fontset&#39;: &#39;stix&#39;})</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
-
-<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sa">r</span><span class="s2">&quot;$y = \alpha^2$&quot;</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">x</span><span class="o">**</span><span class="mi">3</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sa">r</span><span class="s2">&quot;$y = \alpha^3$&quot;</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span> <span class="c1"># upper left corner</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$\alpha$&#39;</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$y$&#39;</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">);</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<img alt="../../../_images/bb65ddeeddac9388416c63aaa78ec93b8d6ef874b5b55447cb63bfb517caa8e0.png" src="../../../_images/bb65ddeeddac9388416c63aaa78ec93b8d6ef874b5b55447cb63bfb517caa8e0.png" />
 </div>
 </div>
 </section>
@@ -996,7 +942,8 @@ commentsRunWhenDOMLoaded(addUtterances);
 <h3>Configuración de colores, tipos de línea y marcadores<a class="headerlink" href="#configuracion-de-colores-tipos-de-linea-y-marcadores" title="Link to this heading">#</a></h3>
 <section id="colores">
 <h4>Colores<a class="headerlink" href="#colores" title="Link to this heading">#</a></h4>
-<p>Con matplotlib se puede definir los colores de las lineas y de otros elementos gráficos de varias maneras. Primero podemos usar una sintaxis parecida a la de MATLAB donde <code class="docutils literal notranslate"><span class="pre">'b'</span></code> significa blue (azul), <code class="docutils literal notranslate"><span class="pre">'g'</span></code> significa green (verde), etc. El API de MATLAB para seleccionar estilos de lineas también es soportado: donde  <code class="docutils literal notranslate"><span class="pre">'b.-'</span></code>  significa azul con linea estilo linea punto.</p>
+<p>Con matplotlib se puede definir los colores de las lineas y de otros elementos gráficos de varias maneras.
+Podemos usar una sintaxis parecida a la de MATLAB donde <code class="docutils literal notranslate"><span class="pre">'b'</span></code> significa blue (azul), <code class="docutils literal notranslate"><span class="pre">'g'</span></code> significa green (verde), etc. Matplotlib también soporta el API de MATLAB para seleccionar estilos de lineas: donde, por ejemplo, <code class="docutils literal notranslate"><span class="pre">'b.-'</span></code>  significa azul con linea estilo linea punto.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># MATLAB style line color and style </span>
@@ -1006,7 +953,7 @@ commentsRunWhenDOMLoaded(addUtterances);
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7f8384105210&gt;]
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7f94100fed10&gt;]
 </pre></div>
 </div>
 </div>
@@ -1023,7 +970,7 @@ commentsRunWhenDOMLoaded(addUtterances);
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../../_images/296afccaa50a3d0826fac613b7ea87ba087a8b8671fb9871dae455abc5f1cedd.png" src="../../../_images/296afccaa50a3d0826fac613b7ea87ba087a8b8671fb9871dae455abc5f1cedd.png" />
+<img alt="../../../_images/794ad76845d4258afcb306175d0b5520b3b0ed418a2e04d5b9a3bbcb60954f84.png" src="../../../_images/794ad76845d4258afcb306175d0b5520b3b0ed418a2e04d5b9a3bbcb60954f84.png" />
 </div>
 </div>
 </section>
@@ -1064,14 +1011,14 @@ commentsRunWhenDOMLoaded(addUtterances);
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../../_images/78a10e9981f581a225ecdb029d21ba13467ce3af90efd486dd6f202caff3426d.png" src="../../../_images/78a10e9981f581a225ecdb029d21ba13467ce3af90efd486dd6f202caff3426d.png" />
+<img alt="../../../_images/b0c08df0217b01bccbeccf2691116239305091874b4c913692c23b649c687874.png" src="../../../_images/b0c08df0217b01bccbeccf2691116239305091874b4c913692c23b649c687874.png" />
 </div>
 </div>
 </section>
 </section>
 <section id="control-sobre-la-apariencia-del-eje">
 <h3>Control sobre la apariencia del eje<a class="headerlink" href="#control-sobre-la-apariencia-del-eje" title="Link to this heading">#</a></h3>
-<p>La apariencia de los ejes es un aspecto importante de una figura que a menudo necesitamos modificar para hacer una publicación con calidad gráfica. Necesitamos poder controlar dónde se colocan las marcas y las etiquetas, modificar el tamaño de la fuente y posiblemente las etiquetas utilizadas en los ejes. En esta sección veremos cómo controlar esas propiedades en una figura de matplotlib.</p>
+<p>La apariencia de los ejes es un aspecto importante de una figura. Se necesita controlar dónde se colocan las marcas y las etiquetas, modificar el tamaño de la fuente y posiblemente las etiquetas utilizadas en los ejes. En esta sección veremos cómo controlar esas propiedades en una figura de matplotlib.</p>
 <section id="rango">
 <h4>Rango<a class="headerlink" href="#rango" title="Link to this heading">#</a></h4>
 <p>Lo primero que podríamos querer configurar es el rango de los ejes. Podemos hacerlo utilizando los métodos <code class="docutils literal notranslate"><span class="pre">set_ylim</span></code> y <code class="docutils literal notranslate"><span class="pre">set_xlim</span></code> en el objeto de eje, o <code class="docutils literal notranslate"><span class="pre">axis('tight')</span></code> para obtener rangos de ejes «ajustados» de manera automática:</p>
@@ -1094,7 +1041,7 @@ commentsRunWhenDOMLoaded(addUtterances);
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../../_images/9970a81bba010a171f91aa39e9edfcbea6e2f2f60ab0794beccb8bd3f74c89ec.png" src="../../../_images/9970a81bba010a171f91aa39e9edfcbea6e2f2f60ab0794beccb8bd3f74c89ec.png" />
+<img alt="../../../_images/e4221b76ba7a98fe3fc0317750dc249448f7d5cf7ba6cc7aeba42c36e51ccdd5.png" src="../../../_images/e4221b76ba7a98fe3fc0317750dc249448f7d5cf7ba6cc7aeba42c36e51ccdd5.png" />
 </div>
 </div>
 </section>
@@ -1115,14 +1062,14 @@ commentsRunWhenDOMLoaded(addUtterances);
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../../_images/da6fc7d43fc085d1c1b85a0b0fcdffa399b0296832dffc6dd1895f4d13f1bb56.png" src="../../../_images/da6fc7d43fc085d1c1b85a0b0fcdffa399b0296832dffc6dd1895f4d13f1bb56.png" />
+<img alt="../../../_images/71dd6729f1550f381c80ee115094e189a5b12194a0dd1db86be71e3304ccc361.png" src="../../../_images/71dd6729f1550f381c80ee115094e189a5b12194a0dd1db86be71e3304ccc361.png" />
 </div>
 </div>
 </section>
 </section>
 <section id="ubicacion-de-las-etiquetas-y-etiquetas-personalizadas">
 <h3>Ubicación de las etiquetas y etiquetas personalizadas<a class="headerlink" href="#ubicacion-de-las-etiquetas-y-etiquetas-personalizadas" title="Link to this heading">#</a></h3>
-<p>Podemos determinar explícitamente dónde queremos que los tics del eje con <code class="docutils literal notranslate"><span class="pre">set_xticks</span></code> y <code class="docutils literal notranslate"><span class="pre">set_yticks</span></code>, que toman una lista de valores para los lugares donde se colocarán los tics en el eje. También podemos usar los métodos <code class="docutils literal notranslate"><span class="pre">set_xticklabels</span></code> y <code class="docutils literal notranslate"><span class="pre">set_yticklabels</span></code> para proporcionar una lista de etiquetas de texto personalizadas para cada ubicación de marca:</p>
+<p>Podemos determinar explícitamente dónde queremos que los ticks del eje con <code class="docutils literal notranslate"><span class="pre">set_xticks</span></code> y <code class="docutils literal notranslate"><span class="pre">set_yticks</span></code>, que toman una lista de valores para los lugares donde se colocarán los tics en el eje. También podemos usar los métodos <code class="docutils literal notranslate"><span class="pre">set_xticklabels</span></code> y <code class="docutils literal notranslate"><span class="pre">set_yticklabels</span></code> para proporcionar una lista de etiquetas de texto personalizadas para cada ubicación de marca:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
@@ -1139,13 +1086,14 @@ commentsRunWhenDOMLoaded(addUtterances);
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../../_images/3f5172df8cebb4551246b1ec2b1312492ddbf7d5b4ab9e0ba055dfa1dd721c93.png" src="../../../_images/3f5172df8cebb4551246b1ec2b1312492ddbf7d5b4ab9e0ba055dfa1dd721c93.png" />
+<img alt="../../../_images/b7361e5c61b9b8f68366c4c0cb0cf8162ae9ad21072edcaa181e54d2b9bb3833.png" src="../../../_images/b7361e5c61b9b8f68366c4c0cb0cf8162ae9ad21072edcaa181e54d2b9bb3833.png" />
 </div>
 </div>
-<p>Hay una serie de métodos más avanzados para controlar la colocación de marcas mayores y menores en las cifras de matplotlib, como la ubicación automática de acuerdo con diferentes políticas. Consulte la <a class="reference external" href="http://matplotlib.org/api/ticker_api.html">documentación de matplotlib</a> para obtener más información.</p>
+<p>Hay una serie de métodos más avanzados para controlar la colocación de marcas mayores y menores en las cifras de matplotlib, como la ubicación automática de acuerdo con diferentes políticas.
+Es coveniente consultar la <a class="reference external" href="http://matplotlib.org/api/ticker_api.html">documentación de matplotlib</a> para obtener más información.</p>
 <section id="notacion-cientifica">
 <h4>Notación científica<a class="headerlink" href="#notacion-cientifica" title="Link to this heading">#</a></h4>
-<p>Con grandes números en los ejes, a menudo es mejor usar la notación científica:</p>
+<p>Con números grandes en los ejes, a menudo es mejor usar la notación científica:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
@@ -1164,7 +1112,7 @@ commentsRunWhenDOMLoaded(addUtterances);
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../../_images/af6229af554fd92136f42ef84f000eab2be7a0a8802df0a4cd67a0dcd23def31.png" src="../../../_images/af6229af554fd92136f42ef84f000eab2be7a0a8802df0a4cd67a0dcd23def31.png" />
+<img alt="../../../_images/23b1a61c2854bdab6e4e7459349803989597becc7f09641bf95ab582be30dbca.png" src="../../../_images/23b1a61c2854bdab6e4e7459349803989597becc7f09641bf95ab582be30dbca.png" />
 </div>
 </div>
 </section>
@@ -1194,7 +1142,7 @@ commentsRunWhenDOMLoaded(addUtterances);
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../../_images/53cc73d4adc4f9547447f8274d46b6c9f6cc9a336a681ec782028274017aa364.png" src="../../../_images/53cc73d4adc4f9547447f8274d46b6c9f6cc9a336a681ec782028274017aa364.png" />
+<img alt="../../../_images/5ca2f71ee4d5cb5d3f582754aeddb1f8309a3e7303ac21782386e3c0e900b6ed.png" src="../../../_images/5ca2f71ee4d5cb5d3f582754aeddb1f8309a3e7303ac21782386e3c0e900b6ed.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -1225,14 +1173,14 @@ commentsRunWhenDOMLoaded(addUtterances);
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../../_images/1c4bea2afa2929325432149f233f61e6f4c28390a7d3113c41798b057e7442bc.png" src="../../../_images/1c4bea2afa2929325432149f233f61e6f4c28390a7d3113c41798b057e7442bc.png" />
+<img alt="../../../_images/34de4e674ffaaa21fcc5df0422ffe5652801a56342083a80a242dabd37934a24.png" src="../../../_images/34de4e674ffaaa21fcc5df0422ffe5652801a56342083a80a242dabd37934a24.png" />
 </div>
 </div>
 </section>
 </section>
 <section id="grillas">
 <h3>Grillas<a class="headerlink" href="#grillas" title="Link to this heading">#</a></h3>
-<p>Con el método <code class="docutils literal notranslate"><span class="pre">grid</span></code> en el objeto de eje, podemos activar y desactivar las líneas de la cuadrícula. También podemos personalizar el aspecto de las líneas de la cuadrícula utilizando los mismos argumentos de palabras clave que la función <code class="docutils literal notranslate"><span class="pre">plot</span></code>:</p>
+<p>Con el método <code class="docutils literal notranslate"><span class="pre">grid</span></code> en el objeto de eje, podemos activar y desactivar líneas de cuadrícula detras de la figura. También podemos personalizar el aspecto de las mismas utilizando los mismos argumentos para ajustas las lineas con la función <code class="docutils literal notranslate"><span class="pre">plot</span></code>:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span>
@@ -1248,7 +1196,7 @@ commentsRunWhenDOMLoaded(addUtterances);
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../../_images/36e14ced52c4419f5fa5e705fbf3ccc2070ca3d7ccf4f9101388a6df0ce7e6bf.png" src="../../../_images/36e14ced52c4419f5fa5e705fbf3ccc2070ca3d7ccf4f9101388a6df0ce7e6bf.png" />
+<img alt="../../../_images/7d5951379249ee99f7d0408b39bee3d3dbdeced3787ce32a588eb9169e1bdecd.png" src="../../../_images/7d5951379249ee99f7d0408b39bee3d3dbdeced3787ce32a588eb9169e1bdecd.png" />
 </div>
 </div>
 </section>
@@ -1272,7 +1220,7 @@ commentsRunWhenDOMLoaded(addUtterances);
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../../_images/7d1d2f907796c98ade9cdd84ee9e1c622ab474a65a0bbc01858c87d0368ea19c.png" src="../../../_images/7d1d2f907796c98ade9cdd84ee9e1c622ab474a65a0bbc01858c87d0368ea19c.png" />
+<img alt="../../../_images/5b88948674d2ffeb9ac82d459b7130019285c02e88722c5fefad317414f6c01e.png" src="../../../_images/5b88948674d2ffeb9ac82d459b7130019285c02e88722c5fefad317414f6c01e.png" />
 </div>
 </div>
 </section>
@@ -1297,7 +1245,7 @@ commentsRunWhenDOMLoaded(addUtterances);
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../../_images/182fef4cc0ac4714411f84da9cc709cbc8df13a006ef7aa51c1daa3c81721a69.png" src="../../../_images/182fef4cc0ac4714411f84da9cc709cbc8df13a006ef7aa51c1daa3c81721a69.png" />
+<img alt="../../../_images/39fd0a5a9cb97be46bb31ba0b4b3364d934fc3e7c8b4ba4b5f044721595ce38a.png" src="../../../_images/39fd0a5a9cb97be46bb31ba0b4b3364d934fc3e7c8b4ba4b5f044721595ce38a.png" />
 </div>
 </div>
 </section>
@@ -1322,13 +1270,13 @@ commentsRunWhenDOMLoaded(addUtterances);
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../../_images/cdc910a62b68ed982be24a6d0105aa89b7f783ac760a23bebc2b281d391d591e.png" src="../../../_images/cdc910a62b68ed982be24a6d0105aa89b7f783ac760a23bebc2b281d391d591e.png" />
+<img alt="../../../_images/a10dcdd13c18d72e677b01404eb1ed86fa24a259aabffe478d2ab50319d652e4.png" src="../../../_images/a10dcdd13c18d72e677b01404eb1ed86fa24a259aabffe478d2ab50319d652e4.png" />
 </div>
 </div>
 </section>
 <section id="otros-estilos-de-trama-2d">
 <h3>Otros estilos de trama 2D<a class="headerlink" href="#otros-estilos-de-trama-2d" title="Link to this heading">#</a></h3>
-<p>Además del método regular “plot”, hay una serie de otras funciones para generar diferentes tipos de gráficos. Consulte la <a class="reference external" href="http://matplotlib.org/gallery.html">galería de gráficos de matplotlib</a> para obtener una lista completa de los tipos de gráficos disponibles. Algunos de los más útiles se muestran a continuación:</p>
+<p>Además del método regular “plot”, hay una serie de otras funciones para generar diferentes tipos de gráficos. La <a class="reference external" href="http://matplotlib.org/gallery.html">galería de gráficos de matplotlib</a> contiene una lista completa de los tipos de gráficos disponibles. Algunos de los más útiles se muestran a continuación:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">])</span>
@@ -1355,7 +1303,7 @@ commentsRunWhenDOMLoaded(addUtterances);
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../../_images/b6c560f75b087d22dbb007e24ad6a9c035004a41a9acdb3f1244cb0f5729d937.png" src="../../../_images/b6c560f75b087d22dbb007e24ad6a9c035004a41a9acdb3f1244cb0f5729d937.png" />
+<img alt="../../../_images/47462e99d20cae3b38c781d2a9478a2d6e72652bb933fe72537b29ecfef97b7a.png" src="../../../_images/47462e99d20cae3b38c781d2a9478a2d6e72652bb933fe72537b29ecfef97b7a.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -1369,7 +1317,7 @@ commentsRunWhenDOMLoaded(addUtterances);
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../../_images/937b1a7a31fb000c78f871303be060505e432d3c13fc9ec8e14a45e051d77267.png" src="../../../_images/937b1a7a31fb000c78f871303be060505e432d3c13fc9ec8e14a45e051d77267.png" />
+<img alt="../../../_images/cbee8e06964999076676e68145eee35f9192d8bcf28c6e0efd39af0591a6dd24.png" src="../../../_images/cbee8e06964999076676e68145eee35f9192d8bcf28c6e0efd39af0591a6dd24.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -1389,7 +1337,7 @@ commentsRunWhenDOMLoaded(addUtterances);
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../../_images/fb16ec901b2d15a8ae90d84d58ec4f7ebdfecdddc0df3c9b6e1620d30b1017f8.png" src="../../../_images/fb16ec901b2d15a8ae90d84d58ec4f7ebdfecdddc0df3c9b6e1620d30b1017f8.png" />
+<img alt="../../../_images/ed591f4c7ddb8938eb685f7cbb246a1a0d0015f786a29dc7f1a1ef88edff4032.png" src="../../../_images/ed591f4c7ddb8938eb685f7cbb246a1a0d0015f786a29dc7f1a1ef88edff4032.png" />
 </div>
 </div>
 </section>
@@ -1408,7 +1356,7 @@ commentsRunWhenDOMLoaded(addUtterances);
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../../_images/612b57378ea76c34f5797fb4c9dc8c88df4a61ee70865f2effcc3c37139635e8.png" src="../../../_images/612b57378ea76c34f5797fb4c9dc8c88df4a61ee70865f2effcc3c37139635e8.png" />
+<img alt="../../../_images/63d8f8f8ca43f5a19060866e34a6663a757f557ac4ae76f7c993b6b9d9fa2a52.png" src="../../../_images/63d8f8f8ca43f5a19060866e34a6663a757f557ac4ae76f7c993b6b9d9fa2a52.png" />
 </div>
 </div>
 </section>
@@ -1425,7 +1373,7 @@ commentsRunWhenDOMLoaded(addUtterances);
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../../_images/59bc47bceb5a849fe0c0dcdf2e70e438a6c40cc113625d7d7645ac7f5e87cc09.png" src="../../../_images/59bc47bceb5a849fe0c0dcdf2e70e438a6c40cc113625d7d7645ac7f5e87cc09.png" />
+<img alt="../../../_images/f561c7ad62f0762f4d579bf71bfe87776c9efaf4c291688e0dfe812e4e2fcc5d.png" src="../../../_images/f561c7ad62f0762f4d579bf71bfe87776c9efaf4c291688e0dfe812e4e2fcc5d.png" />
 </div>
 </div>
 </section>
@@ -1444,7 +1392,7 @@ commentsRunWhenDOMLoaded(addUtterances);
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../../_images/706e6423cbcd980e78dc711ebe34811c67f0a29e3e058f413722a3568ab42cde.png" src="../../../_images/706e6423cbcd980e78dc711ebe34811c67f0a29e3e058f413722a3568ab42cde.png" />
+<img alt="../../../_images/ffb7b4887d418c188af6266b359d9732ea9ff1c1eccd248a8bc0e16ce7f82813.png" src="../../../_images/ffb7b4887d418c188af6266b359d9732ea9ff1c1eccd248a8bc0e16ce7f82813.png" />
 </div>
 </div>
 </section>
@@ -1470,7 +1418,7 @@ commentsRunWhenDOMLoaded(addUtterances);
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../../_images/b287be6e6375f40ed2fa59ca67cb899feee5bd5fafd89a0571700fe7f7e94fb5.png" src="../../../_images/b287be6e6375f40ed2fa59ca67cb899feee5bd5fafd89a0571700fe7f7e94fb5.png" />
+<img alt="../../../_images/5e3e29fe086bb52b06e631b6f7581ac3ae41f752b24f01f046c894296a48e3ef.png" src="../../../_images/5e3e29fe086bb52b06e631b6f7581ac3ae41f752b24f01f046c894296a48e3ef.png" />
 </div>
 </div>
 </section>
@@ -1501,7 +1449,7 @@ commentsRunWhenDOMLoaded(addUtterances);
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../../_images/9f95299db164af498f6ba8413a1cae15d12363db935b2725a3ad196dfafd2b59.png" src="../../../_images/9f95299db164af498f6ba8413a1cae15d12363db935b2725a3ad196dfafd2b59.png" />
+<img alt="../../../_images/33e9690e9752889ae6f751d2177c24d813d8b39bdd2316a518bb071077be2603.png" src="../../../_images/33e9690e9752889ae6f751d2177c24d813d8b39bdd2316a518bb071077be2603.png" />
 </div>
 </div>
 </section>
@@ -1542,7 +1490,7 @@ commentsRunWhenDOMLoaded(addUtterances);
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../../_images/32d75a5b351d78aee5fb8b94744bcd2cdac41500d442de7fbef241460c591f93.png" src="../../../_images/32d75a5b351d78aee5fb8b94744bcd2cdac41500d442de7fbef241460c591f93.png" />
+<img alt="../../../_images/0320a3222e353cf763be863360f35ef721e33d54e26bd6fecc975f8adf818230.png" src="../../../_images/0320a3222e353cf763be863360f35ef721e33d54e26bd6fecc975f8adf818230.png" />
 </div>
 </div>
 </section>
@@ -1560,7 +1508,7 @@ commentsRunWhenDOMLoaded(addUtterances);
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../../_images/c7a0356a5adf2d1f34d41e61dd309ed8c26a9e16d3c73ee0d7238e5fa63b1c82.png" src="../../../_images/c7a0356a5adf2d1f34d41e61dd309ed8c26a9e16d3c73ee0d7238e5fa63b1c82.png" />
+<img alt="../../../_images/58c83c6e2f6a6aca6450613627d6209d1d41dfbff5870459de7532cda855b773.png" src="../../../_images/58c83c6e2f6a6aca6450613627d6209d1d41dfbff5870459de7532cda855b773.png" />
 </div>
 </div>
 </section>
@@ -1575,7 +1523,7 @@ commentsRunWhenDOMLoaded(addUtterances);
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../../_images/7fa4be907855f767c93e14d622d6931728306cfd886ddf160be21af43a7f9af6.png" src="../../../_images/7fa4be907855f767c93e14d622d6931728306cfd886ddf160be21af43a7f9af6.png" />
+<img alt="../../../_images/0113f1d89fa921a329b7d65f4a0e6c1bc4fc9b22ca4174e4e965ef5b6be9b890.png" src="../../../_images/0113f1d89fa921a329b7d65f4a0e6c1bc4fc9b22ca4174e4e965ef5b6be9b890.png" />
 </div>
 </div>
 </section>
@@ -1665,8 +1613,8 @@ commentsRunWhenDOMLoaded(addUtterances);
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#la-api-orientada-a-objetos-matplotlib">La API orientada a objetos matplotlib</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tamano-de-la-figura-relacion-de-aspecto-y-dpi">Tamaño de la figura, relación de aspecto y DPI</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#guardando-figuras">Guardando figuras</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#formatos-disponibles-cuales-deben-usarse-para-obtener-la-mejor-calidad">Formatos disponibles: ¿cuáles deben usarse para obtener la mejor calidad?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#guardado-de-las-figuras">Guardado de las figuras</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eleccion-del-formato-de-la-figura">Elección del formato de la figura</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#leyendas-etiquetas-y-titulos">Leyendas, etiquetas y títulos</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#titulos-de-las-figuras">Títulos de las figuras</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#nombres-de-eje">Nombres de eje</a></li>
